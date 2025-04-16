@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
+  <title>Verse 46 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="nav-left"></div>
+    <div class="nav-right">
+      <a href="../index.html">Home</a>
+      <a href="../verses.html">Verses</a>
+      <a href="../about.html">About D.V. Gundappa</a>
+      <a href="../media.html">Interviews & Media</a>
+      <a href="../purchase.html">How to Buy</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Kagga 101 – Verse #46</h1>
+
+  <h2><em>"My dreams are true, and my memories are true."</em></h2>
+  <p>This line affirms the value of subjective experiences. Dreams and memories shape the speaker’s internal world and are valid truths in their own right.</p>
+
+  <h2><em>"And those that stir and shake my spirit – those impulses, too."</em></h2>
+  <p>Emotional responses and spontaneous feelings are recognized as meaningful. They represent deep truths that influence the speaker’s life and soul.</p>
+
+  <h2><em>"These little distinct truths are segments of the whole."</em></h2>
+  <p>Each personal truth is a piece of a greater reality. Dreams, memories, and impulses contribute to a holistic self-understanding.</p>
+
+  <h2><em>"And they all matter to my life and to my soul!"</em></h2>
+  <p>Every experience matters. These truths, no matter how small or fleeting, help define both the speaker’s earthly journey and spiritual essence.</p>
+
+  <h2>Interpretation:</h2>
+  <p>This verse affirms the power of personal truth. Individual experiences are not trivial—they are vital components of the speaker’s story and identity.</p>
+
+  <h2>Spiritual Reflection:</h2>
+  <p>The verse suggests that our soul's growth is shaped by every emotion and memory. Recognizing them is part of honoring our deeper spiritual path.</p>
+
+  <h2>Philosophical Insight:</h2>
+  <p>This resonates with existential thought: personal truth is central to meaning. Life is built on subjective moments that form a broader understanding of reality.</p>
+
+  <h2>Conclusion:</h2>
+  <p>Each experience—dream or impulse—is a thread in the fabric of our lives. To honor them is to honor the soul’s journey toward wholeness and truth.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
