@@ -34,6 +34,48 @@
     nav .nav-left a:first-child {
       margin-left: 0;
     }
+    
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      nav .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav .nav-right {
+        display: none;
+        width: 100%;
+        text-align: right;
+        margin-top: 10px;
+      }
+
+      /* Show hamburger icon */
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      /* Show nav items when active */
+      nav.active .nav-right {
+        display: block;
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    /* Default styles */
     .hero {
       width: 100%;
       max-height: 500px;
@@ -95,6 +137,10 @@
         <a href="media.html">Interviews & Media</a>
         <a href="purchase.html">How to Buy</a>
       </div>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776; <!-- Hamburger icon symbol -->
+      </div>
     </div>
   </nav>
 
@@ -144,6 +190,12 @@
       index = (index + 1) % images.length;
       carousel.style.transform = `translateX(-${index * 100}%)`;
     }, 3000);
+
+    // Toggle the navigation menu on mobile
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active');  // This will toggle visibility of the menu on mobile
+    }
   </script>
 
   <footer style="text-align:center; font-size:13px; margin-top:60px; color:#999;">
