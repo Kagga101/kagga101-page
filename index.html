@@ -8,82 +8,82 @@
     body {
       margin: 0;
       font-family: Cambria, Georgia, serif;
-      background: linear-gradient(to bottom right, #fffdf7, #f7f3ec);
+      background: #fdfbf7;
       color: #2d2b2a;
-      line-height: 1.7;
+      line-height: 1.6;
     }
 
-    .hero {
-      background: url('https://images.unsplash.com/photo-1503264116251-35a269479413?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
-      color: white;
-      text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-      padding: 100px 20px;
-      text-align: center;
+    .hero-img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
     }
 
-    .hero h1 {
-      font-size: 3.5em;
-      margin-bottom: 0.2em;
-    }
-
-    .hero h2 {
-      font-size: 1.3em;
-      font-weight: normal;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 20px 30px;
-      background-color: #ffffffea;
-      border-radius: 10px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    }
-
-    .main-text {
-      font-size: 1.15em;
-      color: #444;
-    }
-
-    .main-text p {
-      margin-bottom: 1.5em;
-    }
-
-    footer {
-      text-align: center;
+    .subtitle-block {
       padding: 40px 20px;
-      font-size: 0.9em;
-      color: #888;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffffffdd;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .subtitle-block p {
+      font-family: Arial, sans-serif;
+      margin: 6px 0;
+    }
+
+    .subtitle-line1 {
+      font-style: italic;
+      font-size: 15px;
+    }
+
+    .subtitle-line2 {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .subtitle-line3 {
+      font-style: italic;
+      font-size: 15px;
+    }
+
+    .subtitle-line4 {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .subtitle-line5 {
+      font-style: italic;
+      font-size: 13px;
+    }
+
+    .subtitle-line6 {
+      font-style: italic;
+      font-weight: bold;
+      font-size: 13px;
     }
   </style>
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Kagga 101</h1>
-    <h2>
-      Interpretive Translation of 101 Verses<br/>
-      from Sri. D.V. Gundappa’s Mankuthimmana Kagga<br/>
-      by Rama Gopal<br/>
-      Photography by Vasu Kadalagere
-    </h2>
-  </section>
+  <!-- ✅ Hero image with title embedded -->
+  <img src="WhatsApp%20Image%202025-01-17%20at%202.16.29%20PM.jpeg" alt="Kagga 101 Banner" class="hero-img" />
 
-  <div class="container">
-    <div class="main-text">
-      <p><strong>Kagga 101</strong> by Rama Gopal is a compelling and beautifully crafted homage to one of Kannada literature’s most revered voices—D.V. Gundappa. This elegant coffee table book features interpretive translations of 101 selected verses from Sri. Gundappa’s celebrated work in Kannada, <em>Mankuthimmana Kagga</em>, each thoughtfully paired with striking, contemplative photography by Vasu Kadalagere. The result is an immersive experience that blends poetic depth with visual storytelling.</p>
-
-      <p>In <strong>Kagga 101</strong>, Gopal brings a fresh and accessible lens to DVG’s timeless verses, making them resonate with a global audience—especially younger readers and those growing up outside India. Rather than offering literal translations, the book embraces a reflective, interpretive approach, capturing the spirit and essence of each verse.</p>
-
-      <p>This is more than a book of poetry—it is an invitation to pause, reflect, and engage with the quiet wisdom that has shaped generations. Whether you are a lover of literature, a seeker of philosophical thought, or simply someone who appreciates beautiful books, <strong>Kagga 101</strong> offers something rare and enduring.</p>
-
-      <p>Set for release on <strong>April 27th</strong>, <strong>Kagga 101</strong> is both a tribute to the past and a bridge to the future—an inspiring debut from a thoughtful new voice.</p>
-    </div>
+  <!-- ✅ Subtitle text block with custom formatting -->
+  <div class="subtitle-block">
+    <p class="subtitle-line1"><em>Interpretive Translation of 101 Verses</em></p>
+    <p class="subtitle-line1"><em>from Sri. D.V.Gundappa’s</em></p>
+    <p class="subtitle-line2"><em><strong>Mankuthimmana Kagga</strong></em></p>
+    <p class="subtitle-line3"><em>by</em></p>
+    <p class="subtitle-line4"><em><strong>Rama Gopal</strong></em></p>
+    <br/>
+    <p class="subtitle-line5"><em>Photography by</em></p>
+    <p class="subtitle-line6"><em><strong>Vasu Kadalagere</strong></em></p>
   </div>
-
-  <footer>
-    &copy; 2024 Kagga 101 | Rama Gopal
-  </footer>
 
 </body>
 </html>
