@@ -1,0 +1,1 @@
+document.getElementById('searchInput').addEventListener('input', function() { document.getElementById('results').innerText = 'Search not yet implemented.'; });
