@@ -79,33 +79,40 @@
   </style>
 </head>
 <body>
+
   <nav>
-  <div class="nav-container">
-    <div class="nav-left">
-      <a href="index.html">Home</a>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav-right">
+        <a href="verses.html">Verses</a>
+        <a href="about.html">About D.V. Gundappa</a>
+        <a href="media.html">Interviews & Media</a>
+        <a href="purchase.html">How to Buy</a>
+      </div>
     </div>
-    <div class="nav-right">
-      <a href="verses.html">Verses</a>
-      <a href="about.html">About D.V. Gundappa</a>
-      <a href="media.html">Interviews & Media</a>
-      <a href="purchase.html">How to Buy</a>
-    </div>
-  </div>
-</nav>
+  </nav>
+
   <div class="container">
     <h1>Kagga 101 – All Verses</h1>
     <input type="text" id="search" placeholder="Search for a verse number (e.g., 42)...">
     <div class="verse-grid" id="verseGrid"></div>
   </div>
+
+  <footer style="text-align:center; font-size:13px; margin-top:60px; color:#999;">
+    © 2025 Rama Gopal. All rights reserved.
+  </footer>
+
   <script>
     const verseGrid = document.getElementById("verseGrid");
     for (let i = 1; i <= 101; i++) {
-      const num = String(i).padStart(3, '0');
       const a = document.createElement("a");
       a.href = `verses/verse${i}.html`;
       a.textContent = `Verse ${i}`;
       verseGrid.appendChild(a);
     }
+
     const searchInput = document.getElementById("search");
     searchInput.addEventListener("input", function () {
       const query = this.value.toLowerCase();
@@ -115,5 +122,6 @@
       });
     });
   </script>
+
 </body>
 </html>
