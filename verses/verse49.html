@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
+  <title>Verse 49 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="nav-left"></div>
+    <div class="nav-right">
+      <a href="../index.html">Home</a>
+      <a href="../verses.html">Verses</a>
+      <a href="../about.html">About D.V. Gundappa</a>
+      <a href="../media.html">Interviews & Media</a>
+      <a href="../purchase.html">How to Buy</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Kagga 101 – Verse #49</h1>
+
+  <h2><em>"The garden of beauty doesn’t just spring out of disparity,<br>but with the right mix, consistency and compatibility."</em></h2>
+  <p>This line highlights that beauty is not formed by randomness or contrast alone—it’s the result of intentional balance. Harmony is achieved through a thoughtful arrangement of different elements working together.</p>
+
+  <h2><em>"It’s in full bloom when the disparate play in harmony<br>with no façade, their bare innate selves in unity!"</em></h2>
+  <p>The verse continues by emphasizing authenticity and unity. When contrasting elements interact genuinely, without pretenses, they create a deeper, more meaningful form of beauty—natural, effortless, and complete.</p>
+
+  <h2>Unity and Authenticity:</h2>
+  <p>Real beauty emerges from the union of varied forces acting in honest collaboration. This reflects how genuine relationships, artistic expression, and even societies function best when diversity is embraced without ego or masks.</p>
+
+  <h2>Philosophical Reflection:</h2>
+  <p>The verse echoes themes from Taoism, Buddhism, and Hegelian synthesis—where harmony is not the absence of difference, but the result of integrating it. The coexistence of difference brings richness and depth to life and art alike.</p>
+
+  <h2>Conclusion:</h2>
+  <p>Verse 49 beautifully reminds us that true beauty is born not of uniformity but of unity. When contrasts coexist without conflict, and when each part contributes its unique essence, the result is harmony—and that is beauty in its fullest form.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
