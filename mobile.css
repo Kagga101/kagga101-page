@@ -9,26 +9,16 @@
 
   nav .nav-container {
     display: flex;
-    justify-content: space-between; /* Add space between items */
+    justify-content: space-between; /* Ensure space between Home and hamburger */
     align-items: center;
     width: 100%;
   }
 
-  /* Show the Home link on mobile */
-  nav .nav-left {
-    display: block; /* Ensure Home is visible */
-  }
-
-  nav .nav-left a {
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  /* Initially hide nav items on mobile */
+  /* Hide nav items initially on mobile */
   nav .nav-right {
     display: none;
     width: 100%;
-    text-align: left; /* Align links to the left */
+    text-align: left; /* Align the links to the left */
     margin-top: 10px;
   }
 
