@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verse 39 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="nav-right">
+        <a href="../verses.html">Verses</a>
+        <a href="../about.html">About D.V. Gundappa</a>
+        <a href="../media.html">Interviews & Media</a>
+        <a href="../purchase.html">How to Buy</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Kagga 101 – Verse #39</h1>
+
+    <p>This verse presents a metaphor for life's journey, illustrating the delicate balance between caution and trust as we navigate the uncertainties that lie ahead. The dark caves and majestic mountain serve as symbolic representations of the challenges and aspirations that we encounter throughout life.</p>
+
+    <h2>"There’re dark caves on either side and a majestic mountain straight ahead."</h2>
+    <p>The dark caves symbolize the unknown challenges, fears, and adversities in life, while the majestic mountain stands for the higher ideals, ambitions, or fulfillment we strive toward. The verse paints life as a narrow, focused path flanked by uncertainty, but leading toward something inspiring and meaningful.</p>
+
+    <h2>"On this path, should you stroll trusting that a vicious cat won’t approach?"</h2>
+    <p>This line introduces a sense of vulnerability, asking whether it’s wise to walk naively, assuming no danger will arise. The “vicious cat” represents sudden, unseen threats. The question serves as a cautionary prompt to stay alert and not take safety or stability for granted on life’s path.</p>
+
+    <h2>"Bowing to the idea that the mysterious ghost might pounce"</h2>
+    <p>Here, the verse acknowledges the presence of unpredictable and intangible forces—“mysterious ghosts”—that can arise unexpectedly. Bowing to them doesn’t imply fear, but rather respect and awareness of the unknown. It’s a recognition that uncertainty is an inherent part of the human journey.</p>
+
+    <h2>"Would be the prudent way to tackle the walk of life!"</h2>
+    <p>The final line delivers the verse’s core message: approach life with prudence. This doesn’t mean living in fear, but walking forward with awareness, courage, and preparation. It suggests that wisdom lies in expecting and respecting the unpredictable, while still pursuing the goals ahead with conviction.</p>
+
+    <h2>Conclusion:</h2>
+    <p>This verse offers a practical philosophy for life: balance caution with determination, and remain mindful of the ever-present unknowns. The dark caves and ghostly forces are reminders of the uncontrollable, while the majestic mountain invites us to continue striving. To walk the path of life well is not to ignore danger, but to walk on with open eyes and a resilient heart.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
