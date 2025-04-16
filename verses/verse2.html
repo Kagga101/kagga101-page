@@ -74,19 +74,84 @@
 </head>
 <body>
 
-  <nav>
-    <div class="nav-container">
-      <div class="nav-left">
-        <a href="../index.html">Home</a>
-      </div>
-      <div class="nav-right">
-        <a href="../verses.html">Verses</a>
-        <a href="../about.html">About D.V. Gundappa</a>
-        <a href="../media.html">Interviews & Media</a>
-        <a href="../purchase.html">How to Buy</a>
-      </div>
+<nav>
+  <div class="nav-container">
+    <div class="nav-left">
+      <a href="../index.html">Home</a>
     </div>
-  </nav>
+    <div class="nav-right">
+      <a href="../verses.html">Verses</a>
+      <a href="../about.html">About D.V. Gundappa</a>
+      <a href="../media.html">Interviews & Media</a>
+      <a href="../purchase.html">How to Buy</a>
+    </div>
+    <!-- Hamburger Icon -->
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776; <!-- Hamburger icon symbol -->
+    </div>
+  </div>
+</nav>
+
+<script>
+  // Toggle the navigation menu on mobile
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+<style>
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    nav .nav-left {
+      display: none; /* Hide home link on mobile */
+    }
+
+    nav .nav-right {
+      display: none; /* Hide all links on mobile */
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 70%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
+      padding-top: 60px; /* Offset for the navbar */
+      padding-left: 20px;
+      z-index: 1000; /* Ensure it appears above everything */
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
+      transition: transform 0.3s ease-in-out;
+      transform: translateX(100%); /* Hide off-screen */
+    }
+
+    /* Show hamburger icon */
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      cursor: pointer;
+      color: #2d2b2a;
+      padding: 10px;
+    }
+
+    /* Show the nav items when the menu is active */
+    nav.active .nav-right {
+      display: block;
+      transform: translateX(0); /* Slide the menu in from the right */
+    }
+
+    nav .nav-right a {
+      display: block;
+      margin: 10px 0;
+      padding: 8px;
+      font-size: 18px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav .nav-right a:hover {
+      background-color: #ddd;
+    }
+  }
+</style>
+
 
   <div class="container">
     <h1>Kagga 101 – Verse #2</h1>
