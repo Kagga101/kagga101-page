@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verse 37 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="nav-right">
+        <a href="../verses.html">Verses</a>
+        <a href="../about.html">About D.V. Gundappa</a>
+        <a href="../media.html">Interviews & Media</a>
+        <a href="../purchase.html">How to Buy</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Kagga 101 – Verse #37</h1>
+
+    <p>This verse explores the subjectivity of truth and experience, suggesting that the way truth is perceived and experienced is deeply individualistic and influenced by perspective. The central idea here is that truth, though universal in nature, is always filtered through the lens of personal perception, shaped by one's position, context, and experience.</p>
+
+    <h2>"How can they be the same for all, truth’s form and experience?"</h2>
+    <p>The verse questions the possibility of a universal truth or experience that is identical for everyone. It implies that truth is not a one-size-fits-all concept, but rather something that varies based on individual perspective. Each person, shaped by unique life experiences, perceives and internalizes truth differently.</p>
+
+    <h2>"For one, it's felt at the base at the sight of the mighty mountains;"</h2>
+    <p>One person stands at the base of the mountain, experiencing awe, humility, and perhaps even insignificance. From this grounded perspective, the mountain seems overwhelming. This symbolizes how truth can feel powerful and distant depending on where we stand emotionally or intellectually in life.</p>
+
+    <h2>"For the other, perched on the top, looking down the vast expanse."</h2>
+    <p>Another person stands at the summit and sees the world below as open, expansive, and perhaps even conquerable. Their truth, shaped by this elevated position, feels more like perspective and overview than awe. It symbolizes how achievement or distance changes our relationship to the same truth.</p>
+
+    <h2>"With views so different, it’s in the beholder's eyes where beauty lies!"</h2>
+    <p>The concluding line reaffirms the idea that truth and beauty are subjective. The same mountain is perceived in radically different ways. Thus, it’s not the mountain—or truth—itself that changes, but the person experiencing it. This diversity of perception is essential to understanding the complexity and richness of life.</p>
+
+    <h2>Conclusion:</h2>
+    <p>This verse underscores the subjectivity of truth, beauty, and experience. It invites us to appreciate that what we see and feel is filtered through our unique vantage points, shaped by our inner world and external circumstances. Instead of seeking one objective truth, the verse encourages empathy and openness to others' experiences as valid expressions of the same reality.</p>
+
+    <p>By acknowledging that truth lies in perception, the verse promotes humility, tolerance, and a deeper understanding of others. It offers a gentle reminder: in a world full of different views, wisdom lies not in asserting one’s own truth as absolute, but in appreciating the mosaic of perspectives that color the human experience.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
