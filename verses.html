@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kagga 101 – Verses</title>
+  <title>Kagga 101 – All Verses</title>
   <style>
     body {
       background-color: #f7f3ec;
@@ -14,56 +14,86 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
     }
 
     h1 {
       text-align: center;
-      font-size: 24px;
+      font-size: 28px;
       margin-bottom: 30px;
     }
 
-    ul.verse-list {
-      list-style: none;
-      padding: 0;
+    #search {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      font-size: 16px;
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: Cambria, Georgia, serif;
     }
 
-    ul.verse-list li {
-      margin: 8px 0;
+    .verse-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
     }
 
-    ul.verse-list a {
-      color: #2d2b2a;
+    .verse-grid a {
+      display: block;
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 20px;
       text-decoration: none;
+      color: #2d2b2a;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    ul.verse-list a:hover {
-      text-decoration: underline;
+    .verse-grid a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background-color: #f0eae0;
+    }
+
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Kagga 101 – All Verses</h1>
-    <ul class="verse-list">
-      <!-- Verse links -->
-      <!-- START OF LINKS -->
-      <!-- We'll use JS to generate 101 links -->
+    <input type="text" id="search" placeholder="Search for a verse number (e.g., 42)...">
+
+    <div class="verse-grid" id="verseGrid">
+      <!-- Verse links inserted via JS -->
       <script>
-        const ul = document.currentScript.parentElement;
+        const verseGrid = document.getElementById("verseGrid");
+
         for (let i = 1; i <= 101; i++) {
           const num = String(i).padStart(3, '0');
-          const li = document.createElement('li');
-          const a = document.createElement('a');
+          const a = document.createElement("a");
           a.href = `verses/verse-${num}.html`;
           a.textContent = `Verse ${i}`;
-          li.appendChild(a);
-          ul.appendChild(li);
+          a.dataset.verse = i;
+          verseGrid.appendChild(a);
         }
+
+        const searchInput = document.getElementById("search");
+        searchInput.addEventListener("input", function () {
+          const query = this.value.toLowerCase();
+          document.querySelectorAll("#verseGrid a").forEach(link => {
+            const match = link.textContent.toLowerCase().includes(query);
+            link.style.display = match ? "block" : "none";
+          });
+        });
       </script>
-      <!-- END OF LINKS -->
-    </ul>
+    </div>
   </div>
 </body>
 </html>
