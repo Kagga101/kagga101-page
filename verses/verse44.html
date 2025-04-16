@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
+  <title>Verse 44 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="nav-left"></div>
+    <div class="nav-right">
+      <a href="../index.html">Home</a>
+      <a href="../verses.html">Verses</a>
+      <a href="../about.html">About D.V. Gundappa</a>
+      <a href="../media.html">Interviews & Media</a>
+      <a href="../purchase.html">How to Buy</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Kagga 101 – Verse #44</h1>
+
+  <h2><em>"Shining sun with the rays of light, drops of rain with the expansive sky,"</em></h2>
+  <p>This opening imagery suggests that even the most basic and visible elements of nature—those that seem separate—are deeply connected, working together in harmony.</p>
+
+  <h2><em>"Beautiful earth with its tilted spin, and its inside affair with the wind"</em></h2>
+  <p>The phrase <em>“inside affair”</em> suggests a mutual relationship between the Earth and the wind, as if they are in constant interaction, with each influencing and shaping the other.</p>
+
+  <h2><em>"Are a few of the countless bonds in the tangled web of this universe."</em></h2>
+  <p>This metaphorical web conveys the idea that everything, no matter how small or large, plays a role in the larger cosmic design.</p>
+
+  <h2><em>"Some are gross and others subtle, but they are always inseparable!"</em></h2>
+  <p>Yet, the verse suggests that both types of forces are equally important, and they are inseparable—they work together to create the delicate balance of existence.</p>
+
+  <h2>Interpretation:</h2>
+  <p>This verse can be interpreted as a spiritual or philosophical reflection on the interconnectedness of all things in the universe... nothing exists in isolation.</p>
+
+  <h2>Connection to Human Experience:</h2>
+  <p>On a more personal level, this verse serves as a reminder that human beings are also part of this grand web... our lives are shaped by the complex web of relationships.</p>
+
+  <h2>Philosophical Reflection:</h2>
+  <p>The verse encourages a shift in perspective—one that embraces the idea that everything is connected and that nothing exists in isolation. It calls for a sense of humility and reverence.</p>
+
+  <h2>Conclusion:</h2>
+  <p>In summary, this verse beautifully illustrates the interwoven nature of the universe... urging us to recognize that nothing exists in isolation.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
