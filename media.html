@@ -1,1 +1,94 @@
-<!DOCTYPE html><html><head><title>Media</title><link rel='stylesheet' href='style.css'></head><body><h1>Interviews & Media</h1><p>Links to interviews or media appearances.</p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interviews & Media – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-family: Cambria, serif;
+      font-size: 14px;
+    }
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+    .main-content {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+    .video-thumbnail {
+      display: inline-block;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .video-thumbnail:hover {
+      transform: scale(1.02);
+    }
+    .video-thumbnail img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+    }
+    .video-caption {
+      margin-top: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav-right">
+        <a href="verses.html">Verses</a>
+        <a href="about.html">About D.V. Gundappa</a>
+        <a href="media.html">Interviews & Media</a>
+        <a href="purchase.html">How to Buy</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-content">
+    <a
+      class="video-thumbnail"
+      href="https://www.youtube.com/watch?v=fD7q5pgWksM&t=4s"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="https://img.youtube.com/vi/fD7q5pgWksM/0.jpg" alt="YouTube Interview Thumbnail">
+    </a>
+    <div class="video-caption">Watch the Kagga 101 Interview on YouTube</div>
+  </div>
+
+</body>
+</html>
