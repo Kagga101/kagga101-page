@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verse 40 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="nav-left">
+      <!-- Remove the Home link from here -->
+    </div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="verses.html">Verses</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      &#9776;
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Kagga 101 – Verse #40</h1>
+
+  <p>This verse offers a profound reflection on the relationship between external perceptions and internal realities. It explores how human consciousness shapes our experience of the world, while also highlighting the transformative journey toward self-awareness and spiritual growth.</p>
+
+  <h2>"Limits of eyes, ears and mind define your world outside."</h2>
+  <p>This line suggests that our perception of the external world is shaped and confined by the limitations of our senses and cognition. Our understanding of reality is filtered through these faculties, meaning that what we perceive is only a fraction of the whole truth. It encourages humility in the face of what we think we know.</p>
+
+  <h2>"Joy and despair felt are from what’s inherent deep inside."</h2>
+  <p>Here, the verse turns inward, stating that our emotional experience is shaped more by our internal world than by external events. Joy and despair arise from within, revealing that transformation must begin at the level of self-awareness and introspection rather than from changing external circumstances alone.</p>
+
+  <h2>"As you rise to greater heights, vastness of the world expands,"</h2>
+  <p>As one elevates their consciousness, wisdom, or perspective, they begin to see a larger, more interconnected world. Growth, whether intellectual, emotional, or spiritual, expands the boundaries of our understanding and allows us to perceive greater truths and connections.</p>
+
+  <h2>"And as you soar, that selfish pettiness of yours wears away!"</h2>
+  <p>With this rise in awareness, egoistic concerns start to diminish. The more we grow, the less we remain attached to trivial, self-centered perspectives. This line reflects a spiritual maturing, where elevation brings humility, compassion, and a release from pettiness.</p>
+
+  <h2>Conclusion:</h2>
+  <p>This verse reflects a journey from limited perception to expanded awareness. It teaches that our understanding of the world is shaped by both our senses and our state of mind—and that through growth and introspection, we can transcend selfishness and begin to engage the world more deeply. The verse is a call to look inward for transformation and outward with expanded vision and compassion.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
