@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Verse 38 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-left">
+        <a href="../index.html">Home</a>
+      </div>
+      <div class="nav-right">
+        <a href="../verses.html">Verses</a>
+        <a href="../about.html">About D.V. Gundappa</a>
+        <a href="../media.html">Interviews & Media</a>
+        <a href="../purchase.html">How to Buy</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        &#9776;
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Kagga 101 – Verse #38</h1>
+
+    <p>This verse presents a vivid reflection on life’s uncertainties and the human experience of navigating between the darkness of the past and the darkness of the future. The imagery of darkness symbolizes unknowns, chaos, and perhaps even suffering or fear—conditions that everyone faces in different ways. Yet, the verse emphasizes how individual perceptions and attitudes toward these unknowns shape one’s experience of them.</p>
+
+    <h2>"Darkness in the past and darkness ahead, life’s chaos is in between wedged."</h2>
+    <p>The opening line sets a somber tone, portraying life as a journey through two vast unknowns. The darkness of the past may contain regrets, trauma, or things left unsaid, while the darkness ahead represents uncertainty and fear of the future. In between lies life’s chaos—our day-to-day struggles and confusions—which are shaped by how we process the past and imagine the future.</p>
+
+    <h2>"For some, this darkness is empty."</h2>
+    <p>This line explores the feeling of existential void. Some individuals may perceive the unknown as meaningless—a bleak, empty space devoid of guidance or purpose. It speaks to the despair or nihilism that can arise when life’s uncertainties feel overwhelming or purposeless.</p>
+
+    <h2>"For others, who see in it a mystery,"</h2>
+    <p>In contrast, this line shifts to a more curious, hopeful interpretation. To some, the same darkness that feels empty to others is a mystery—an invitation to explore and grow. This mindset sees uncertainty as a realm of potential, where meaning can emerge through discovery and reflection.</p>
+
+    <h2>"If in the thick fog indeed exists a ghostly force,"</h2>
+    <p>This metaphor introduces an unseen, possibly spiritual or psychological force that lies hidden in the fog of uncertainty. It could represent fate, intuition, or the subconscious—elements of existence that shape our lives from behind the veil, sometimes eerily or inexplicably.</p>
+
+    <h2>"Won’t the whiff of its breath caress over them?"</h2>
+    <p>The final line adds a poetic flourish to this mysterious force, portraying it as gentle yet inescapable. The “whiff of breath” is subtle, but it signifies that even the most intangible or mysterious forces can still affect us. Whether we see the unknown as empty or mysterious, it touches our lives nonetheless.</p>
+
+    <h2>Conclusion:</h2>
+    <p>This verse explores how our perception shapes our experience of life’s uncertainties. The past and future are inevitable darknesses, but whether they feel empty or mysterious depends on our attitude and interpretation. By seeing the unknown as an opportunity for insight rather than a void, we may better navigate the chaos of life in between. The verse gently urges us to find curiosity in uncertainty, and to remain open to the subtle, ghostly forces that shape our lives from just beyond visibility.</p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      nav.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
