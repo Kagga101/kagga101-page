@@ -8,22 +8,43 @@
     body {
       background-color: #f7f3ec;
       font-family: Cambria, Georgia, serif;
-      font-size: 11px;
+      font-size: 12px;
       color: #2d2b2a;
-      padding: 40px;
+      margin: 0;
+      padding: 0;
     }
-
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-family: Cambria, serif;
+      font-size: 14px;
+    }
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
     .container {
       max-width: 1000px;
       margin: auto;
+      padding: 40px 20px;
     }
-
     h1 {
       text-align: center;
       font-size: 28px;
       margin-bottom: 30px;
     }
-
     #search {
       display: block;
       width: 100%;
@@ -32,15 +53,12 @@
       margin-bottom: 30px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      font-family: Cambria, Georgia, serif;
     }
-
     .verse-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       gap: 15px;
     }
-
     .verse-grid a {
       display: block;
       background-color: #ffffff;
@@ -53,61 +71,49 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.08);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-
     .verse-grid a:hover {
       transform: translateY(-2px);
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       background-color: #f0eae0;
     }
-
-    .hidden {
-      display: none;
-    }
   </style>
 </head>
 <body>
-    <nav>
+  <nav>
     <div class="nav-container">
-      <div>
+      <div class="nav-left">
+        <a href="index.html">Home</a>
+      </div>
+      <div class="nav-right">
         <a href="verses.html">Verses</a>
         <a href="about.html">About D.V. Gundappa</a>
         <a href="media.html">Interviews & Media</a>
         <a href="buy.html">How to Buy</a>
       </div>
-      <div>
-        <a href="index.html">Home</a>
-      </div>
     </div>
   </nav>
-
   <div class="container">
     <h1>Kagga 101 – All Verses</h1>
     <input type="text" id="search" placeholder="Search for a verse number (e.g., 42)...">
-
-    <div class="verse-grid" id="verseGrid">
-      <!-- Verse links inserted via JS -->
-      <script>
-        const verseGrid = document.getElementById("verseGrid");
-
-        for (let i = 1; i <= 101; i++) {
-          const num = String(i).padStart(3, '0');
-          const a = document.createElement("a");
-          a.href = `verses/verse-${num}.html`;
-          a.textContent = `Verse ${i}`;
-          a.dataset.verse = i;
-          verseGrid.appendChild(a);
-        }
-
-        const searchInput = document.getElementById("search");
-        searchInput.addEventListener("input", function () {
-          const query = this.value.toLowerCase();
-          document.querySelectorAll("#verseGrid a").forEach(link => {
-            const match = link.textContent.toLowerCase().includes(query);
-            link.style.display = match ? "block" : "none";
-          });
-        });
-      </script>
-    </div>
+    <div class="verse-grid" id="verseGrid"></div>
   </div>
+  <script>
+    const verseGrid = document.getElementById("verseGrid");
+    for (let i = 1; i <= 101; i++) {
+      const num = String(i).padStart(3, '0');
+      const a = document.createElement("a");
+      a.href = `verses/verse-${num}.html`;
+      a.textContent = `Verse ${i}`;
+      verseGrid.appendChild(a);
+    }
+    const searchInput = document.getElementById("search");
+    searchInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      document.querySelectorAll("#verseGrid a").forEach(link => {
+        const match = link.textContent.toLowerCase().includes(query);
+        link.style.display = match ? "block" : "none";
+      });
+    });
+  </script>
 </body>
 </html>
