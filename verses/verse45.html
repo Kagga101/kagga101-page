@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
+  <title>Verse 45 – Kagga 101</title>
+  <style>
+    body {
+      background-color: #f7f3ec;
+      font-family: Cambria, Georgia, serif;
+      font-size: 15px;
+      color: #2d2b2a;
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+
+    nav {
+      background-color: #f7f3ec;
+      border-bottom: 1px solid #ccc;
+      padding: 15px 40px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    nav .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    nav .nav-left a, nav .nav-right a {
+      text-decoration: none;
+      color: #2d2b2a;
+      margin-left: 20px;
+    }
+
+    nav .nav-left a:first-child {
+      margin-left: 0;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    h2 {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    blockquote {
+      margin: 20px 0;
+      padding-left: 20px;
+      border-left: 3px solid #999;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="nav-left"></div>
+    <div class="nav-right">
+      <a href="../index.html">Home</a>
+      <a href="../verses.html">Verses</a>
+      <a href="../about.html">About D.V. Gundappa</a>
+      <a href="../media.html">Interviews & Media</a>
+      <a href="../purchase.html">How to Buy</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Kagga 101 – Verse #45</h1>
+
+  <h2><em>"They’re all around him, the myriad forms of divinity."</em></h2>
+  <p>The sacred is not limited to symbols—it’s in nature, animals, and the cosmos. This line reveals that the divine is ever-present in all forms.</p>
+
+  <h2><em>"He moves with them but fails to realize their inner beauty."</em></h2>
+  <p>Despite being surrounded by the sacred, man overlooks it. Spiritual blindness keeps him from experiencing the divine essence all around.</p>
+
+  <h2><em>"They’re animals of the earth,” man gauges, “Just like me,”</em></h2>
+  <p>By labeling animals as mere creatures like himself, man misses the divine spark in both. This is a reflection of ego and reductionist thinking.</p>
+
+  <h2><em>"And lets the truth so close within his embrace slip out!"</em></h2>
+  <p>The truth is accessible but escapes unnoticed. Spiritual truth is missed not because it's far, but because our perception is narrow.</p>
+
+  <h2>Interpretation:</h2>
+  <p>This verse challenges us to question how often we miss the sacred in the ordinary. It urges us to shift from superficial judgment to deeper awareness.</p>
+
+  <h2>Spiritual Reflection:</h2>
+  <p>Rather than reducing life to its physicality, we’re invited to see the sacred essence in all things and awaken to our surroundings with reverence.</p>
+
+  <h2>Philosophical Insight:</h2>
+  <p>The verse echoes non-dual and pantheistic ideas—everything is divine, and separateness is an illusion. Realizing this truth leads to oneness.</p>
+
+  <h2>Conclusion:</h2>
+  <p>The divine is always near—but to experience it, we must look beyond the surface. The sacred hides in plain sight, waiting for us to truly see.</p>
+</div>
+
+<script>
+  function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
