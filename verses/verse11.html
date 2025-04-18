@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 11 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,107 +128,46 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-      <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
-
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #11</h1>
+
+  <p>This verse delves into the harsh realities of life, portraying it as a challenging and often painful journey. It addresses the human struggle, self-centered desires, and the inevitable impermanence of everything. Let’s break it down:</p>
+
+  <h2>"Life’s full of struggles, grumbles, anxiety and gripe"</h2>
+  <p>The opening line sets a tone of frustration and discomfort, acknowledging that life often feels like an ongoing battle. The use of words like "struggles," "grumbles," "anxiety," and "gripe" paints a picture of constant inner turmoil and dissatisfaction. It speaks to the universal experience of facing difficulties that bring emotional and mental unrest, creating a sense of heaviness and struggle.</p>
+
+  <h2>"As we’re without a white cane or pathway lights."</h2>
+  <p>Here, the speaker points to the absence of guidance or clarity in life. A white cane is commonly associated with blind individuals, symbolizing a tool for navigating through darkness or uncertainty. The "pathway lights" represent guidance, hope, or clarity, which are often missing in life’s journey. This emphasizes the feeling of being directionless or lost, moving through life without clear markers or a way to see the full picture.</p>
+
+  <h2>"While burning ego blows smoke, we crawl without sleep,"</h2>
+  <p>This line introduces the destructive force of ego. The phrase "burning ego blows smoke" suggests that our egos can cloud our judgment and create confusion, like smoke that obstructs vision. Ego, in this context, is portrayed as a force that keeps us restless and disoriented, even as we "crawl without sleep." The image of crawling without sleep emphasizes exhaustion, both physical and emotional, as we continue in our struggles. This suggests a sense of weariness and frustration, as we keep pushing forward without rest or reprieve.</p>
+
+  <h2>"But this ambitious trek is not for us to keep!"</h2>
+  <p>The final line is a sobering realization that the ambitious journey we’re on—full of struggles, driven by ego, and lacking clarity—is not permanent or ultimately ours to hold onto. The word "keep" suggests that, despite all the effort, striving, and ambition, the rewards or outcomes are transient. This speaks to the idea of impermanence and the futility of clinging to ambitions or desires. Ultimately, the journey itself—no matter how exhausting or ambitious—is something we can’t retain or control indefinitely.</p>
+
+  <h2>Overall Interpretation:</h2>
+  <p>This verse reflects on the heavy and often disorienting nature of human existence. It speaks to the internal struggles, the influence of ego, and the constant striving for something that might ultimately be beyond our control. The image of moving through life without guidance or clarity resonates with the feeling of being lost or directionless. The mention of the "burning ego" blowing smoke suggests that much of our unrest comes from within—our desires, our need for validation, and our attachment to outcomes. However, the final line suggests a lesson in detachment: no matter how hard we try or how much ambition drives us, the journey and its rewards are fleeting, reminding us of the impermanence of life and the futility of holding on too tightly.</p>
+
+  <p>In essence, the verse reflects on the struggle and suffering inherent in the human experience, while hinting at the need for acceptance, detachment, and a recognition of the transient nature of all things.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
-
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #11</h1>
-
-    <p>This verse delves into the harsh realities of life, portraying it as a challenging and often painful journey. It addresses the human struggle, self-centered desires, and the inevitable impermanence of everything. Let’s break it down:</p>
-
-    <h2>"Life’s full of struggles, grumbles, anxiety and gripe"</h2>
-    <p>The opening line sets a tone of frustration and discomfort, acknowledging that life often feels like an ongoing battle. The use of words like "struggles," "grumbles," "anxiety," and "gripe" paints a picture of constant inner turmoil and dissatisfaction. It speaks to the universal experience of facing difficulties that bring emotional and mental unrest, creating a sense of heaviness and struggle.</p>
-
-    <h2>"As we’re without a white cane or pathway lights."</h2>
-    <p>Here, the speaker points to the absence of guidance or clarity in life. A white cane is commonly associated with blind individuals, symbolizing a tool for navigating through darkness or uncertainty. The "pathway lights" represent guidance, hope, or clarity, which are often missing in life’s journey. This emphasizes the feeling of being directionless or lost, moving through life without clear markers or a way to see the full picture.</p>
-
-    <h2>"While burning ego blows smoke, we crawl without sleep,"</h2>
-    <p>This line introduces the destructive force of ego. The phrase "burning ego blows smoke" suggests that our egos can cloud our judgment and create confusion, like smoke that obstructs vision. Ego, in this context, is portrayed as a force that keeps us restless and disoriented, even as we "crawl without sleep." The image of crawling without sleep emphasizes exhaustion, both physical and emotional, as we continue in our struggles. This suggests a sense of weariness and frustration, as we keep pushing forward without rest or reprieve.</p>
-
-    <h2>"But this ambitious trek is not for us to keep!"</h2>
-    <p>The final line is a sobering realization that the ambitious journey we’re on—full of struggles, driven by ego, and lacking clarity—is not permanent or ultimately ours to hold onto. The word "keep" suggests that, despite all the effort, striving, and ambition, the rewards or outcomes are transient. This speaks to the idea of impermanence and the futility of clinging to ambitions or desires. Ultimately, the journey itself—no matter how exhausting or ambitious—is something we can’t retain or control indefinitely.</p>
-
-    <h2>Overall Interpretation:</h2>
-    <p>This verse reflects on the heavy and often disorienting nature of human existence. It speaks to the internal struggles, the influence of ego, and the constant striving for something that might ultimately be beyond our control. The image of moving through life without guidance or clarity resonates with the feeling of being lost or directionless. The mention of the "burning ego" blowing smoke suggests that much of our unrest comes from within—our desires, our need for validation, and our attachment to outcomes. However, the final line suggests a lesson in detachment: no matter how hard we try or how much ambition drives us, the journey and its rewards are fleeting, reminding us of the impermanence of life and the futility of holding on too tightly.</p>
-
-    <p>In essence, the verse reflects on the struggle and suffering inherent in the human experience, while hinting at the need for acceptance, detachment, and a recognition of the transient nature of all things.</p>
-  </div>
 
 </body>
 </html>
