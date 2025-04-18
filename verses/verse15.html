@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 15 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,107 +128,46 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-     <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
-
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #15</h1>
+
+  <p>This verse engages deeply with philosophical and spiritual ideas related to emptiness, existence, and consciousness. It seems to challenge the notion of nothingness or emptiness in the context of self-awareness, and it touches on ideas that are common in Buddhist philosophy as well as other non-dual teachings.</p>
+
+  <h2>"What’s it that says it’s all empty and nothing exists?"</h2>
+  <p>This opening line poses a classic existential or philosophical question. It refers to the idea of emptiness—the notion that nothing in the world has inherent, independent existence. The verse questions this view, asking: If everything is empty, who or what is making this claim? The very statement of emptiness or nothingness suggests the presence of a conscious observer, which opens up a paradox.</p>
+
+  <h2>"But then, won’t the one, conscious of emptiness, still exist?"</h2>
+  <p>This line reveals the paradox. If nothing exists, how can there be an awareness that recognizes this? The awareness that perceives emptiness must still exist. This suggests a subtler form of existence—consciousness—that transcends both being and non-being.</p>
+
+  <h2>"Trusting as the truth, take refuge in this pure awareness"</h2>
+  <p>Here, the verse offers guidance. It points to pure awareness—untainted, unconditioned consciousness—as a foundation for truth. In spiritual traditions, awareness is often considered the ultimate reality that exists beyond conceptualization, judgment, or dualities. This line encourages trust in that awareness.</p>
+
+  <h2>"Since it’s null and empty, this argument of nothingness!"</h2>
+  <p>The final line challenges the argument of nothingness itself. Pure awareness is described as "null and empty" not in the sense of lacking value, but in the sense of being free from fixed concepts. Thus, the debate around nothingness becomes meaningless in the face of this direct, non-conceptual experience of awareness.</p>
+
+  <h2>Overall Interpretation:</h2>
+  <p>This verse is a philosophical meditation on the nature of emptiness and awareness. It explores the paradox that arises when we try to argue about emptiness: if nothing exists, who is aware of it? The verse suggests that awareness exists beyond these debates—it is pure, empty, and constant.</p>
+
+  <p>It encourages trust in awareness as a refuge—an unshakeable truth not bound by conceptual arguments. While all things may be transient or empty, awareness remains unchanging. True understanding and liberation come not from intellectualizing but from directly resting in this awareness that transcends all dualities.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
-
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #15</h1>
-
-    <p>This verse engages deeply with philosophical and spiritual ideas related to emptiness, existence, and consciousness. It seems to challenge the notion of nothingness or emptiness in the context of self-awareness, and it touches on ideas that are common in Buddhist philosophy as well as other non-dual teachings.</p>
-
-    <h2>"What’s it that says it’s all empty and nothing exists?"</h2>
-    <p>This opening line poses a classic existential or philosophical question. It refers to the idea of emptiness—the notion that nothing in the world has inherent, independent existence. In Buddhist philosophy, for example, emptiness (Śūnyatā) is a concept that suggests all things are transient and lack a permanent, unchanging essence. The verse questions this view, asking: If everything is indeed empty and nothing truly exists in the way we might think, who or what is making this claim? The very statement of emptiness or nothingness suggests the existence of a consciousness or an observer making the assertion, which opens up a paradox.</p>
-
-    <h2>"But then, won’t the one, conscious of emptiness, still exist?"</h2>
-    <p>This line reveals the paradox. If emptiness suggests that "nothing exists," then how can there be anyone who is aware of that emptiness? The consciousness that perceives or recognizes emptiness must, by necessity, exist in some form. The verse highlights a tension between the idea of total nothingness and the existence of the observer or awareness. Even if all things are empty of inherent self-nature, the one who is aware of this emptiness must still have some form of existence—otherwise, the concept of emptiness itself wouldn’t be perceived. This suggests a deeper, subtler form of existence that transcends material or conceptual notions of being.</p>
-
-    <h2>"Trusting as the truth, take refuge in this pure awareness"</h2>
-    <p>The verse then shifts its focus to awareness as a refuge or source of truth. The phrase "pure awareness" refers to an untainted, unconditioned state of consciousness—often associated with a deep, direct experience of reality that transcends conceptualization, judgment, or attachment. In many spiritual traditions, awareness is seen as fundamental to understanding the nature of existence. This line encourages the reader to trust in pure awareness as a foundation for truth, as it is not clouded by the dualities of existence or non-existence. It suggests that despite the paradox of nothingness, awareness is a constant and reliable source of truth.</p>
-
-    <h2>"Since it’s null and empty, this argument of nothingness!"</h2>
-    <p>The closing line brings the verse to a resolution of sorts. Awareness is described as "null and empty," which means it is not tied to any fixed form, concept, or dualistic opposition like existence and non-existence. Pure awareness, in this context, is beyond all intellectual debates or conceptual arguments about emptiness or being. It transcends all ideas, including the argument about whether or not things exist. Because it is "null and empty," it is free from the limitations of the mind's constructs and ideas about reality. In essence, the verse is suggesting that the true nature of awareness lies in its freedom from conceptualization and duality.</p>
-
-    <h2>Overall Interpretation:</h2>
-    <p>This verse is a philosophical meditation on the nature of emptiness and awareness. It explores the paradox that arises when we try to argue or intellectualize about emptiness: if everything is empty and nothing truly exists, who is it that is aware of this emptiness? The verse suggests that the true self, or the awareness that perceives emptiness, exists beyond these conceptual debates and dualities. This awareness is pure, empty, and unbound by any specific idea of existence or non-existence, and it serves as the foundation for ultimate truth.</p>
-
-    <p>The verse encourages us to trust in this pure awareness as a refuge—an unshakeable, unchanging truth that doesn’t rely on the intellectual or conceptual ideas of existence, emptiness, or nothingness. It suggests that, while all things may be empty or transient, awareness itself is not subject to these fluctuations; it is constant, free from attachment, and beyond the limitations of conceptual thought. Ultimately, the verse implies that true understanding and liberation come from directly experiencing and resting in this awareness, which is beyond all arguments and dualities.</p>
-  </div>
 
 </body>
 </html>
