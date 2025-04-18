@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 16 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,114 +128,44 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-     <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
-
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #16</h1>
+
+  <p>This verse poignantly captures the human experience of loneliness, searching for connection, and the complexities of love and attachment. It illustrates the emotional turbulence and existential quest for meaning, while hinting at the burdens and struggles that accompany these pursuits.</p>
+
+  <h2>"In the constant struggle of his life’s lonely sojourn,"</h2>
+  <p>The verse opens by framing the person’s journey as a "lonely sojourn"—a solitary and often challenging journey through life. The use of "constant struggle" suggests that this life is fraught with difficulty and hardship. The word "sojourn" implies that life is transient, reinforcing the fleeting nature of existence and the emotional solitude that can accompany it.</p>
+
+  <h2>"He reaches out to feel and grasp his fellow partners."</h2>
+  <p>Here, the speaker describes the individual's longing for connection. The act of reaching out signifies the human desire to form meaningful relationships. The phrase "to feel and grasp" conveys a deep emotional yearning, but also the challenge of truly connecting amid life's uncertainties.</p>
+
+  <h2>"He wanders with his arms outstretched in his frantic search"</h2>
+  <p>The metaphor of wandering with arms outstretched paints a picture of emotional vulnerability and existential disorientation. The frantic search speaks to the urgency and desperation with which humans often seek love, companionship, or meaning.</p>
+
+  <h2>"And wobbles in the vortex of love, attachment and debt."</h2>
+  <p>This line describes the individual being caught in a whirlpool of complex emotions. Love can be uplifting but also disorienting; attachment can offer comfort but lead to dependence; and debt symbolizes burdens or obligations—emotional, financial, or karmic. The word "wobbles" suggests a lack of stability as one navigates these forces.</p>
+
+  <h2>Overall Interpretation:</h2>
+  <p>This verse speaks to the emotional vulnerability of human beings. It explores the dualities of seeking love and connection while simultaneously becoming entangled in the complexities that those relationships bring. The vortex metaphor is especially powerful, evoking how easily we can become overwhelmed by emotional currents when we are not centered or mindful. Ultimately, the verse invites reflection on how we navigate love and attachment with greater awareness and balance.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
-
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #16</h1>
-
-    <p>This verse poignantly captures the human experience of loneliness, searching for connection, and the complexities of love and attachment. It illustrates the emotional turbulence and existential quest for meaning, while hinting at the burdens and struggles that accompany these pursuits.</p>
-
-    <h2>"In the constant struggle of his life’s lonely sojourn,"</h2>
-    <p>The verse opens by framing the person’s journey as a "lonely sojourn"—a solitary and often challenging journey through life. The use of "constant struggle" suggests that this life is fraught with difficulty and hardship. It evokes a sense of existential loneliness, where the individual feels isolated despite the broader human experience of connection and community. The word "sojourn" implies that life is transient, reinforcing the fleeting nature of existence. This could also suggest that, despite the hustle and struggles of daily life, there is an underlying recognition of life’s impermanence and temporary nature.</p>
-
-    <h2>"He reaches out to feel and grasp his fellow partners."</h2>
-    <p>Here, the speaker describes the individual's longing for connection. The act of reaching out signifies the human desire to connect with others, to find companionship, or to form meaningful relationships. The word "partners" can be interpreted in a broader sense—fellow human beings, loved ones, or even life circumstances. This line conveys a fundamental human yearning for emotional bonds, yet it also hints at the difficulty or inability to fully attain this connection. The phrase "to feel and grasp" suggests that the person may be searching desperately, trying to hold onto something tangible or real amidst the isolation.</p>
-
-    <h2>"He wanders with his arms outstretched in his frantic search"</h2>
-    <p>The metaphor of wandering and having arms outstretched deepens the image of a person who is lost, both physically and emotionally. This person’s frantic search highlights a sense of urgency and desperation—seeking something that may not be within reach. The arms outstretched convey a longing for closeness, but they also suggest an unfulfilled search. The individual is moving through life, possibly in circles, not quite finding what he seeks, or feeling ungrounded and adrift in his pursuit of connection or meaning.</p>
-
-    <h2>"And wobbles in the vortex of love, attachment and debt."</h2>
-    <p>The "vortex" metaphor suggests that the individual is caught in a whirlwind or chaotic cycle of emotions, particularly related to love, attachment, and debt. These three elements can be seen as sources of both deep fulfillment and profound suffering:</p>
-    <ul>
-      <li><strong>Love:</strong> While love is often a source of connection, it can also be a source of turbulence when unreciprocated or when it involves unhealthy dynamics.</li>
-      <li><strong>Attachment:</strong> Attachment, especially to people, outcomes, or material things, can trap a person in a cycle of desire and disappointment, reinforcing the emotional struggle.</li>
-      <li><strong>Debt:</strong> The term "debt" could be symbolic of obligations, burdens, or emotional entanglements—things that weigh the individual down and prevent freedom. It could also refer to feelings of owing or being indebted to others, whether through love, social expectation, or responsibility.</li>
-    </ul>
-
-    <p>The “wobbling” suggests instability, as though the person is struggling to find balance in the midst of these emotional and relational forces. The idea of being trapped in a "vortex" evokes a sense of being pulled in different directions, unable to escape or regain control.</p>
-
-    <h2>Overall Interpretation:</h2>
-    <p>This verse speaks to the human condition, specifically the loneliness and confusion that often accompany the search for connection and meaning in life. The lonely sojourn reflects the existential struggle of navigating life’s uncertainties, while the search for partners and the outstretched arms symbolize the deep longing for human interaction, love, and intimacy. However, this search is not without its pitfalls, as the individual becomes caught in the vortex of love, attachment, and debt, which can bring both joy and suffering.</p>
-
-    <p>The verse highlights the instability of human emotions and relationships, suggesting that while connection is essential, it can also be fraught with complexities that leave the person feeling ungrounded or overwhelmed. The vortex suggests that love and attachment, when pursued without awareness or balance, can lead to a cycle of emotional turmoil, rather than bringing fulfillment or peace. Ultimately, the verse serves as a reflection on the human tendency to seek connection, yet also be caught in the very forces—emotionally charged and sometimes binding—that complicate that search.</p>
-  </div>
 
 </body>
 </html>
