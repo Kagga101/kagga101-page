@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 29 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,107 +128,46 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-     <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
-
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #29</h1>
+
+  <p>This verse explores the powerful interplay between nature, human emotion, and the qualities that define the human spirit. It suggests that the external forces of nature stir emotions and impulses within a person, leading to a complex mixture of desire, courage, and dignity. These qualities, when harmonized, create something deeply beautiful.</p>
+
+  <h2>"Diverse radiant forces of the world of nature"</h2>
+  <p>This opening line introduces nature as a dynamic and radiant force—one that is diverse and full of life. The use of the word “radiant” suggests that nature is not just a passive background but an active, vibrant energy that has the power to influence and invigorate the world. The word “diverse” speaks to nature’s complexity and variety, encompassing everything from the physical forces of the natural world to the subtler, more intangible energies that influence human beings.</p>
+
+  <h2>"Incite emotive impulses in this human creature."</h2>
+  <p>The verse then highlights the influence of nature on the human spirit, suggesting that the forces of the natural world stir up emotions in human beings. The phrase "emotive impulses" points to the way nature triggers instinctive feelings—perhaps awe, joy, fear, longing, or even restlessness—all of which are deeply embedded in human nature. Nature doesn’t just affect humans on a physical level, but also touches their emotional and psychological states, setting off waves of feeling that shape how people interact with the world and others.</p>
+
+  <h2>"He then bares a blend of desire, courage and dignity"</h2>
+  <p>This line suggests that these emotional impulses, triggered by the forces of nature, manifest in complex human traits. Desire speaks to the human longing for something—whether physical, emotional, or intellectual. Courage indicates the bravery to face challenges or venture into the unknown. Dignity suggests a sense of inner strength, self-respect, and integrity. The verse proposes that these qualities do not exist in isolation but instead blend together to form a unique expression of the human condition—one that is shaped by both internal desires and external stimuli.</p>
+
+  <h2>"Whose flirtatious harmony is a thing of beauty!"</h2>
+  <p>The final line adds a layer of delicate elegance to this blend of emotions and traits. The phrase “flirtatious harmony” suggests a kind of playful interaction between the various qualities—desire, courage, and dignity—that often exist in a subtle tension with one another. The use of "flirtatious" conveys a sense of lightness, spontaneity, and a willingness to engage with life’s uncertainties and mysteries. This harmony is not rigid or fixed but instead fluid and dynamic, creating something beautiful precisely because it is alive, imperfect, and ever-changing.</p>
+
+  <h2>Overall Interpretation:</h2>
+  <p>This verse illustrates the profound connection between nature and human emotions. It suggests that the diverse and radiant forces of nature trigger emotional responses in human beings, leading them to embody a complex mixture of qualities—desire, courage, and dignity. These traits, when blended together, create a harmonious and beautiful expression of humanity. The reference to flirtatious harmony emphasizes that these qualities are not static or predictable but instead interact in a playful, dynamic way, making the resulting expression uniquely beautiful.</p>
+
+  <p>The verse conveys the idea that the human experience is not one of cold, rigid control over emotion, but rather a fluid, ever-evolving dance with life’s forces—both external and internal. It celebrates the beauty of emotional complexity and the elegance of human resilience, especially as individuals navigate the diverse energies of the world and find balance and grace in the interplay of desire, courage, and dignity. The verse invites the reader to appreciate the subtle beauty of these harmonies, recognizing that the essence of life is often found in the delicate balance of competing forces that shape human experience.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
-
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #29</h1>
-
-    <p>This verse explores the powerful interplay between nature, human emotion, and the qualities that define the human spirit. It suggests that the external forces of nature stir emotions and impulses within a person, leading to a complex mixture of desire, courage, and dignity. These qualities, when harmonized, create something deeply beautiful.</p>
-
-    <h2>"Diverse radiant forces of the world of nature"</h2>
-    <p>This opening line introduces nature as a dynamic and radiant force—one that is diverse and full of life. The use of the word “radiant” suggests that nature is not just a passive background but an active, vibrant energy that has the power to influence and invigorate the world. The word “diverse” speaks to nature’s complexity and variety, encompassing everything from the physical forces of the natural world to the subtler, more intangible energies that influence human beings.</p>
-
-    <h2>"Incite emotive impulses in this human creature."</h2>
-    <p>The verse then highlights the influence of nature on the human spirit, suggesting that the forces of the natural world stir up emotions in human beings. The phrase "emotive impulses" points to the way nature triggers instinctive feelings—perhaps awe, joy, fear, longing, or even restlessness—all of which are deeply embedded in human nature. Nature doesn’t just affect humans on a physical level, but also touches their emotional and psychological states, setting off waves of feeling that shape how people interact with the world and others.</p>
-
-    <h2>"He then bares a blend of desire, courage and dignity"</h2>
-    <p>This line suggests that these emotional impulses, triggered by the forces of nature, manifest in complex human traits. Desire speaks to the human longing for something—whether physical, emotional, or intellectual. Courage indicates the bravery to face challenges or venture into the unknown. Dignity suggests a sense of inner strength, self-respect, and integrity. The verse proposes that these qualities do not exist in isolation but instead blend together to form a unique expression of the human condition—one that is shaped by both internal desires and external stimuli.</p>
-
-    <h2>"Whose flirtatious harmony is a thing of beauty!"</h2>
-    <p>The final line adds a layer of delicate elegance to this blend of emotions and traits. The phrase “flirtatious harmony” suggests a kind of playful interaction between the various qualities—desire, courage, and dignity—that often exist in a subtle tension with one another. The use of "flirtatious" conveys a sense of lightness, spontaneity, and a willingness to engage with life’s uncertainties and mysteries. This harmony is not rigid or fixed but instead fluid and dynamic, creating something beautiful precisely because it is alive, imperfect, and ever-changing.</p>
-
-    <h2>Overall Interpretation:</h2>
-    <p>This verse illustrates the profound connection between nature and human emotions. It suggests that the diverse and radiant forces of nature trigger emotional responses in human beings, leading them to embody a complex mixture of qualities—desire, courage, and dignity. These traits, when blended together, create a harmonious and beautiful expression of humanity. The reference to flirtatious harmony emphasizes that these qualities are not static or predictable but instead interact in a playful, dynamic way, making the resulting expression uniquely beautiful.</p>
-
-    <p>The verse conveys the idea that the human experience is not one of cold, rigid control over emotion, but rather a fluid, ever-evolving dance with life’s forces—both external and internal. It celebrates the beauty of emotional complexity and the elegance of human resilience, especially as individuals navigate the diverse energies of the world and find balance and grace in the interplay of desire, courage, and dignity. The verse invites the reader to appreciate the subtle beauty of these harmonies, recognizing that the essence of life is often found in the delicate balance of competing forces that shape human experience.</p>
-  </div>
 
 </body>
 </html>
