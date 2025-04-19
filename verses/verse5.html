@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 5 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,57 @@
       font-style: italic;
       color: #555;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,99 +132,40 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-      <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #5</h1>
+
+  <p>This verse presents a profound and reflective perspective on the intricate dance of existence, blending imagery and metaphor with a sense of control versus chaos. It provides a rich metaphor for the interconnectedness of all existence, a key theme in Hindu philosophy.</p>
+
+  <p>The imagery of "choice specks of dust" lifted and shifted by the wind suggests the transient nature of individual lives within the larger cosmic dance. In Hindu thought, particularly in the teachings of the Bhagavad Gita, life is understood as a dynamic interplay of forces (gunas), and even the smallest actions or elements, represented here by the dust, have purpose and significance within the cosmic order.</p>
+
+  <p>The line "Each one of those sifted has its own spark, a lively dose" resonates with the Hindu concept of <em>atman</em>—the eternal, divine essence within every living being. In the same way that each speck of dust carries its unique "spark," every individual, at their core, carries the divine essence or <em>atman</em>, a reflection of the Supreme Consciousness, <em>Brahman</em>. Hindu philosophy teaches that despite the illusion of separateness (known as <em>maya</em>), all beings are ultimately interconnected as part of a single, indivisible divine reality.</p>
+
+  <p>The third line, "As I observe the world up close, I see a puppet show," evokes the idea of <em>leela</em>, the divine play. In Hindu thought, the universe and all its events are seen as part of Brahman’s play or divine drama. The apparent puppetry suggests that human actions, events, and even suffering may be part of this grand cosmic dance. This also ties into the concept of <em>karma</em>—the actions and consequences that guide the flow of life, often in ways that appear orchestrated or inevitable, though they arise from the choices made within the bounds of <em>dharma</em> (cosmic order).</p>
+
+  <p>Finally, the line "The invisible strings orchestrating the entire flow!" brings to mind the idea of <em>Ishvara</em>, the divine force that directs and governs the workings of the universe. In Hindu philosophy, while individuals are endowed with free will, there is also a sense that the divine presence, Ishvara, is the ultimate cause behind all events, guiding the flow of life according to the law of karma and dharma. The "invisible strings" are symbolic of the divine intelligence and order behind the seeming chaos of existence, which ultimately directs the course of every being's journey.</p>
+
+  <p>In essence, the verse reflects the Hindu view that life is an interconnected, purposeful dance, with every individual, like a speck of dust, part of the larger cosmic whole. Though we may feel as if we are merely following invisible strings, in truth, these strings represent the divine wisdom that governs all life, weaving each individual's actions and experiences into the grand tapestry of the universe.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
 
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #5</h1>
-
-    <p>This verse presents a profound and reflective perspective on the intricate dance of existence, blending imagery and metaphor with a sense of control versus chaos. It provides a rich metaphor for the interconnectedness of all existence, a key theme in Hindu philosophy.</p>
-
-    <p>The imagery of "choice specks of dust" lifted and shifted by the wind suggests the transient nature of individual lives within the larger cosmic dance. In Hindu thought, particularly in the teachings of the <strong>Bhagavad Gita</strong>, life is understood as a dynamic interplay of forces (<em>gunas</em>), and even the smallest actions or elements, represented here by the dust, have purpose and significance within the cosmic order.</p>
-
-    <p>The line "Each one of those sifted has its own spark, a lively dose" resonates with the Hindu concept of <em>atman</em>—the eternal, divine essence within every living being. In the same way that each speck of dust carries its unique "spark," every individual, at their core, carries the divine essence or <em>atman</em>, a reflection of the Supreme Consciousness, <em>Brahman</em>. Hindu philosophy teaches that despite the illusion of separateness (known as <em>maya</em>), all beings are ultimately interconnected as part of a single, indivisible divine reality.</p>
-
-    <p>The third line, "As I observe the world up close, I see a puppet show," evokes the idea of <em>leela</em>, the divine play. In Hindu thought, the universe and all its events are seen as part of <em>Brahman’s</em> play or divine drama. The apparent puppetry suggests that human actions, events, and even suffering may be part of this grand cosmic dance. This also ties into the concept of <em>karma</em>—the actions and consequences that guide the flow of life, often in ways that appear orchestrated or inevitable, though they arise from the choices made within the bounds of <em>dharma</em> (cosmic order).</p>
-
-    <p>Finally, the line "The invisible strings orchestrating the entire flow!" brings to mind the idea of <em>Ishvara</em>, the divine force that directs and governs the workings of the universe. In Hindu philosophy, while individuals are endowed with free will, there is also a sense that the divine presence, <em>Ishvara</em>, is the ultimate cause behind all events, guiding the flow of life according to the law of <em>karma</em> and <em>dharma</em>. The "invisible strings" are symbolic of the divine intelligence and order behind the seeming chaos of existence, which ultimately directs the course of every being's journey.</p>
-
-    <p>In essence, the verse reflects the Hindu view that life is an interconnected, purposeful dance, with every individual, like a speck of dust, part of the larger cosmic whole. Though we may feel as if we are merely following invisible strings, in truth, these strings represent the divine wisdom that governs all life, weaving each individual's actions and experiences into the grand tapestry of the universe.</p>
-  </div>
-
 </body>
 </html>
+
