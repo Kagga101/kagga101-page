@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 27 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,110 +128,49 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-     <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
-
-
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #27</h1>
+
+  <p>This verse delves into the limits of intellectual analysis and the ineffable nature of truth, suggesting that some aspects of reality or existence cannot be fully captured by reason or logic. It speaks to the idea that certain truths transcend conventional tools of understanding and are accessible only through direct experience and clear, intuitive awareness.</p>
+
+  <h2>"Analysis and debate can’t expose it; the effort is fruitless."</h2>
+  <p>This line begins by emphasizing that intellectual pursuits—such as analysis and debate—are inadequate when it comes to uncovering certain deeper truths. The phrase “effort is fruitless” suggests that these cognitive tools may be helpful in many contexts but fall short when it comes to grasping profound, non-material truths. It implies that truth cannot always be dissected, dissected, or debated into clarity through pure reasoning.</p>
+
+  <h2>"The hook of logic can’t catch it; the tool is crude and useless."</h2>
+  <p>Here, the verse deepens its critique of logical reasoning as a means of grasping ultimate truths. The “hook of logic” is an interesting metaphor—it suggests an attempt to capture or “hook” a truth using logic, which is compared to a tool that is ultimately “crude” and “useless” for the task. It reflects the idea that logic, by its nature, can only capture certain kinds of truth, typically those grounded in the material or empirical realms, but it is insufficient for understanding truths that transcend physical reality, such as spiritual or metaphysical experiences.</p>
+
+  <h2>"It’s sensed now and then in subtle experiences, this naked truth,"</h2>
+  <p>This line points to the ephemeral nature of this naked truth. It is not something that can be fully explained or captured with words or concepts but is instead sensed or intuitively experienced in fleeting moments. The phrase “subtle experiences” suggests that the truth is often revealed in quiet, fragile moments—perhaps through introspection, meditation, or sudden flashes of insight that come unexpectedly. This truth is not always accessible, but when it is, it is directly felt rather than intellectually known.</p>
+
+  <h2>"Caught only by the awareness of a clear mind astute!"</h2>
+  <p>Finally, the verse suggests that awareness—specifically a clear, astute mind—is the only “tool” capable of “catching” this truth. The clear mind does not rely on logic or argument but on an attentive, open awareness—the kind of mind that can perceive deeper layers of reality beyond the surface. It highlights the importance of clarity of perception and intuitive understanding in experiencing this truth, suggesting that it is not an intellectual pursuit but a state of being or perception.</p>
+
+  <h2>Overall Interpretation:</h2>
+  <p>This verse critiques the idea that truth can be fully captured through intellectual analysis and logical reasoning alone. It suggests that there are aspects of reality—perhaps spiritual truths, emotional insights, or existential understanding—that are beyond the grasp of conventional tools like debate or analysis. These deeper truths are not easily expressed in language or concepts, and they cannot be “captured” through traditional intellectual approaches. Instead, they are sensed in moments of quiet insight and direct experience.</p>
+
+  <p>The verse calls attention to the importance of awareness, clarity of mind, and intuition as the real means of connecting with these profound truths. It conveys the idea that truth, in its most naked and pure form, is not something to be intellectually acquired but something to be directly perceived through heightened awareness. The contrast between the crudeness of logical tools and the subtlety of truth highlights the limitations of rational thought when it comes to matters that are transcendent, intuitive, or non-material.</p>
+
+  <p>In essence, the verse suggests that knowledge, in its deepest form, requires more than just mental effort—it requires an openness to experience, a quiet mind, and a heightened awareness that can perceive truths beyond the grasp of mere logic and reason. It invites the reader to look beyond intellectual tools and engage with a deeper, more intuitive way of knowing.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
 
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #27</h1>
-
-    <p>This verse delves into the limits of intellectual analysis and the ineffable nature of truth, suggesting that some aspects of reality or existence cannot be fully captured by reason or logic. It speaks to the idea that certain truths transcend conventional tools of understanding and are accessible only through direct experience and clear, intuitive awareness.</p>
-
-    <h2>"Analysis and debate can’t expose it; the effort is fruitless."</h2>
-    <p>This line begins by emphasizing that intellectual pursuits—such as analysis and debate—are inadequate when it comes to uncovering certain deeper truths. The phrase “effort is fruitless” suggests that these cognitive tools may be helpful in many contexts but fall short when it comes to grasping profound, non-material truths. It implies that truth cannot always be dissected, examined, or debated into clarity through pure reasoning.</p>
-
-    <h2>"The hook of logic can’t catch it; the tool is crude and useless."</h2>
-    <p>Here, the verse deepens its critique of logical reasoning as a means of grasping ultimate truths. The “hook of logic” is an interesting metaphor—it suggests an attempt to capture or “hook” a truth using logic, which is compared to a tool that is ultimately “crude” and “useless” for the task. It reflects the idea that logic, by its nature, can only capture certain kinds of truth, typically those grounded in the material or empirical realms, but it is insufficient for understanding truths that transcend physical reality, such as spiritual or metaphysical experiences.</p>
-
-    <h2>"It’s sensed now and then in subtle experiences, this naked truth,"</h2>
-    <p>This line points to the ephemeral nature of this naked truth. It is not something that can be fully explained or captured with words or concepts but is instead sensed or intuitively experienced in fleeting moments. The phrase “subtle experiences” suggests that the truth is often revealed in quiet, fragile moments—perhaps through introspection, meditation, or sudden flashes of insight that come unexpectedly. This truth is not always accessible, but when it is, it is directly felt rather than intellectually known.</p>
-
-    <h2>"Caught only by the awareness of a clear mind astute!"</h2>
-    <p>Finally, the verse suggests that awareness—specifically a clear, astute mind—is the only “tool” capable of “catching” this truth. The clear mind does not rely on logic or argument but on an attentive, open awareness—the kind of mind that can perceive deeper layers of reality beyond the surface. It highlights the importance of clarity of perception and intuitive understanding in experiencing this truth, suggesting that it is not an intellectual pursuit but a state of being or perception.</p>
-
-    <h2>Overall Interpretation:</h2>
-    <p>This verse critiques the idea that truth can be fully captured through intellectual analysis and logical reasoning alone. It suggests that there are aspects of reality—perhaps spiritual truths, emotional insights, or existential understanding—that are beyond the grasp of conventional tools like debate or analysis. These deeper truths are not easily expressed in language or concepts, and they cannot be “captured” through traditional intellectual approaches. Instead, they are sensed in moments of quiet insight and direct experience.</p>
-
-    <p>The verse calls attention to the importance of awareness, clarity of mind, and intuition as the real means of connecting with these profound truths. It conveys the idea that truth, in its most naked and pure form, is not something to be intellectually acquired but something to be directly perceived through heightened awareness. The contrast between the crudeness of logical tools and the subtlety of truth highlights the limitations of rational thought when it comes to matters that are transcendent, intuitive, or non-material.</p>
-
-    <p>In essence, the verse suggests that knowledge, in its deepest form, requires more than just mental effort—it requires an openness to experience, a quiet mind, and a heightened awareness that can perceive truths beyond the grasp of mere logic and reason. It invites the reader to look beyond intellectual tools and engage with a deeper, more intuitive way of knowing.</p>
-  </div>
-
 </body>
 </html>
+
