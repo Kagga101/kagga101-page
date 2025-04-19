@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 2 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,107 +128,45 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Add logo or leave empty -->
+      <a href="index.html">Home</a>
     </div>
-
     <div class="nav-right">
-      <a href="/kagga101-page/index.html">Home</a>
-      <a href="/kagga101-page/verses.html">Verses</a>
-      <a href="/kagga101-page/about.html">About D.V. Gundappa</a>
-      <a href="/kagga101-page/media.html">Interviews & Media</a>
-      <a href="/kagga101-page/purchase.html">How to Buy</a>
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-
     <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #2</h1>
+
+  <p>This verse paints a vivid, cyclical image of life and the cosmos, using the imagery of a lotus to symbolize the natural ebb and flow of existence, along with the expansive nature of the universe. The interplay of blooming and closing petals mirrors larger spiritual and cosmic truths. Let's break it down:</p>
+
+  <p><strong>"Like a lotus slowly blooming with a smile not so subtle":</strong> The lotus is a powerful symbol in many spiritual traditions, especially in Indian philosophy. It represents purity, enlightenment, and the unfolding of consciousness. The idea of the lotus blooming “with a smile not so subtle” suggests the joyful and natural process of awakening or realization. The smile is a metaphor for the grace and beauty inherent in spiritual growth—the unfolding of the self or soul into greater understanding. The lotus’s gradual opening signifies the gentle, steady unfolding of consciousness or awareness, just as the soul slowly awakens to its true nature.</p>
+
+  <p><strong>"At each awakening dawn, and drawing its petals to huddle":</strong> The "awakening dawn" symbolizes the beginning of a new cycle, each day representing a fresh opportunity for growth and realization. The lotus’s action of drawing its petals to "huddle" could represent the introspective moments of quietude, the moments of pause when one turns inward or retreats to the source, as the lotus does at night. In spiritual terms, this could reflect the ebb and flow of consciousness—how during moments of quiet or rest, the individual retreats into themselves, and then, with the new dawn, blooms again, bringing forth wisdom and insight.</p>
+
+  <p><strong>"In an embracing cuddle as it gracefully bows down at dusk":</strong> The lotus "gracefully bows down at dusk," an image that represents the cyclical nature of life—just as the lotus retreats and closes at the end of the day, so too does the individual soul rest or return to its source after a day of activity or growth. This act of bowing can be seen as a gesture of humility, surrender, and reverence—acknowledging the cyclical rhythm of life and the universe, recognizing the need for rest, and surrendering to the divine order that governs existence.</p>
+
+  <p><strong>"The immense universe expands and contracts to a divine pulse!":</strong> The final line brings the cosmic scale into the metaphor. The expansion and contraction of the universe are reminiscent of the rhythms of the breath—prana, the life force—expanding and contracting in all things. This divine pulse can be understood as the cyclical nature of the cosmos, the eternal rhythm that governs the universe, much like the breathing of the lotus. In Indian philosophy, this pulse can be linked to the concept of Brahman (the ultimate reality), which is said to manifest as the expansive and contracting forces of creation, preservation, and dissolution. The universe, like the lotus, follows a divine rhythm, moving from birth to death, growth to rest, in an endless cycle of creation and dissolution.</p>
+
+  <h2>Commentary with Indian Philosophical Context:</h2>
+
+  <p>This verse can be seen as an allegory for the cycle of existence, embodying both the cosmic rhythm and the individual soul's journey. The blooming of the lotus symbolizes the unfolding of consciousness or spiritual awakening (often associated with the soul's journey to self-realization in Indian philosophy). Just as the lotus emerges beautifully at dawn, each individual soul’s awareness expands with the light of truth and wisdom. The evening closing of the lotus can be compared to the state of samadhi or deep meditation, when one retreats inward and embraces the stillness of being.</p>
+
+  <p>The concept of the divine pulse in the final line reflects the spanda—the subtle vibration or dynamic pulse that underlies all of creation in Kashmir Shaivism. It suggests that everything in the universe, from the smallest atom to the largest galaxy, is connected by a divine force or pulse that governs all existence, akin to the rhythm of breath or the cycles of nature.</p>
+
+  <p>Furthermore, the lotus can be seen as a symbol of the soul's purity and growth within the material world. Despite being rooted in the muddy waters, the lotus rises above them to bloom—this represents the soul's journey through the trials of life towards spiritual awakening and ultimate liberation (moksha). The cyclical nature of the lotus’s movements is a reminder of the eternal nature of the soul, which cycles through the waking and resting phases of existence, ultimately merging with the divine, as the universe expands and contracts in harmony with the divine pulse.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
-
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #2</h1>
-
-    <p>This verse paints a vivid, cyclical image of life and the cosmos, using the imagery of a lotus to symbolize the natural ebb and flow of existence, along with the expansive nature of the universe. The interplay of blooming and closing petals mirrors larger spiritual and cosmic truths. Let's break it down:</p>
-
-    <h2>"Like a lotus slowly blooming with a smile not so subtle":</h2>
-    <p>The lotus is a powerful symbol in many spiritual traditions, especially in Indian philosophy. It represents purity, enlightenment, and the unfolding of consciousness. The idea of the lotus blooming “with a smile not so subtle” suggests the joyful and natural process of awakening or realization. The smile is a metaphor for the grace and beauty inherent in spiritual growth—the unfolding of the self or soul into greater understanding. The lotus’s gradual opening signifies the gentle, steady unfolding of consciousness or awareness, just as the soul slowly awakens to its true nature.</p>
-
-    <h2>"At each awakening dawn, and drawing its petals to huddle":</h2>
-    <p>The "awakening dawn" symbolizes the beginning of a new cycle, each day representing a fresh opportunity for growth and realization. The lotus’s action of drawing its petals to "huddle" could represent the introspective moments of quietude, the moments of pause when one turns inward or retreats to the source, as the lotus does at night. In spiritual terms, this could reflect the ebb and flow of consciousness—how during moments of quiet or rest, the individual retreats into themselves, and then, with the new dawn, blooms again, bringing forth wisdom and insight.</p>
-
-    <h2>"In an embracing cuddle as it gracefully bows down at dusk":</h2>
-    <p>The lotus "gracefully bows down at dusk," an image that represents the cyclical nature of life—just as the lotus retreats and closes at the end of the day, so too does the individual soul rest or return to its source after a day of activity or growth. This act of bowing can be seen as a gesture of humility, surrender, and reverence—acknowledging the cyclical rhythm of life and the universe, recognizing the need for rest, and surrendering to the divine order that governs existence.</p>
-
-    <h2>"The immense universe expands and contracts to a divine pulse!":</h2>
-    <p>The final line brings the cosmic scale into the metaphor. The expansion and contraction of the universe are reminiscent of the rhythms of the breath—prana, the life force—expanding and contracting in all things. This divine pulse can be understood as the cyclical nature of the cosmos, the eternal rhythm that governs the universe, much like the breathing of the lotus. In Indian philosophy, this pulse can be linked to the concept of Brahman (the ultimate reality), which is said to manifest as the expansive and contracting forces of creation, preservation, and dissolution. The universe, like the lotus, follows a divine rhythm, moving from birth to death, growth to rest, in an endless cycle of creation and dissolution.</p>
-
-    <h2>Commentary with Indian Philosophical Context:</h2>
-    <p>This verse can be seen as an allegory for the cycle of existence, embodying both the cosmic rhythm and the individual soul's journey. The blooming of the lotus symbolizes the unfolding of consciousness or spiritual awakening (often associated with the soul's journey to self-realization in Indian philosophy). Just as the lotus emerges beautifully at dawn, each individual soul’s awareness expands with the light of truth and wisdom. The evening closing of the lotus can be compared to the state of samadhi or deep meditation, when one retreats inward and embraces the stillness of being.</p>
-
-    <p>The concept of the divine pulse in the final line reflects the spanda—the subtle vibration or dynamic pulse that underlies all of creation in Kashmir Shaivism. It suggests that everything in the universe, from the smallest atom to the largest galaxy, is connected by a divine force or pulse that governs all existence, akin to the rhythm of breath or the cycles of nature.</p>
-
-    <p>Furthermore, the lotus can be seen as a symbol of the soul's purity and growth within the material world. Despite being rooted in the muddy waters, the lotus rises above them to bloom—this represents the soul's journey through the trials of life towards spiritual awakening and ultimate liberation (moksha). The cyclical nature of the lotus’s movements is a reminder of the eternal nature of the soul, which cycles through the waking and resting phases of existence, ultimately merging with the divine, as the universe expands and contracts in harmony with the divine pulse.</p>
-
-  </div>
 
 </body>
 </html>
