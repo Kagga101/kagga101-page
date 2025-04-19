@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 6 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,57 @@
       font-style: italic;
       color: #555;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,99 +132,39 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-      <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #6</h1>
+
+  <p>This verse is rich in imagery and philosophical depth, offering a meditation on the interplay between opposites—light and dark, life and death, beauty and imperfection. Let's dive into each line, incorporating philosophical ideas, including those from Hindu thought.</p>
+
+  <p>The first line, <strong>"Dull little gaps are sprinkled on a gem’s dazzling shine,"</strong> contrasts the dullness of gaps with the brilliance of the gem, which may symbolize the human condition or the nature of existence itself. The gem here could represent the soul or the divine essence, which, in Hindu philosophy, is seen as pure and unblemished (<em>atman</em>). The "dull little gaps" could represent imperfections or limitations, such as the obstacles and challenges that one faces in life. These "gaps" might also reflect <em>maya</em>, the illusion of separateness and duality that causes individuals to perceive themselves as apart from the divine, rather than part of the whole (<em>Brahman</em>). The verse acknowledges that even in the most radiant aspects of life or existence, there are still moments of dullness or imperfection, which are part of the natural flow of life.</p>
+
+  <p>In the second line, <strong>"Breaks of shade are layered between rays of light, the beams fine,"</strong> we encounter the duality of light and shadow, echoing the Hindu concept of <em>dharma</em> and <em>adharma</em>, or righteousness and unrighteousness. Life is not only about light and success but also about the shadow—difficulties, suffering, and moral struggles. The "breaks of shade" suggest that the path to enlightenment or self-realization is never without obstacles. In Hindu thought, life is a balance between these opposites, as both light (knowledge, truth, liberation) and dark (ignorance, suffering, ego) are essential in the soul's journey. The “beams fine” could refer to <em>jnana</em> (knowledge) or <em>sattva</em> (purity), qualities that allow the soul to rise above the dualities of existence, as reflected in the contrast between light and shade.</p>
+
+  <p>The third line, <strong>"Strips of loam lie in a grove, the trees tiered in straight lines,"</strong> evokes an image of the natural order and harmony of the universe. In Hinduism, the concept of <em>dharma</em> emphasizes the natural law or the cosmic order that maintains the universe's balance. The "strips of loam" symbolize the earth, the material foundation of life, which nourishes the trees (life) in the grove. The "trees tiered in straight lines" suggests structure and order—perhaps referring to the way existence itself is organized in layers or cycles. This could allude to the cyclical nature of life (<em>samsara</em>), where the soul is born, dies, and is reborn in different forms, but always remains part of the eternal <em>Brahman</em>, like the trees in the grove standing in a well-organized pattern.</p>
+
+  <p>The final line, <strong>"And glorious life takes refuge in death from time to time!"</strong> offers a poignant reflection on the cyclical nature of existence and the Hindu understanding of life and death. In Hindu philosophy, death is not an end, but a transition—a return to <em>Brahman</em> or the eternal source. The idea that life "takes refuge in death" suggests that through the process of death and rebirth, the soul achieves liberation or enlightenment. Life and death are not opposing forces, but part of the same ongoing cycle.</p>
+
+  <p><strong>In summary</strong>, this verse beautifully captures the essence of Hindu philosophy by illustrating the constant interplay between opposites—light and darkness, life and death, perfection and imperfection—and how these forces shape the journey of the soul. It conveys the understanding that everything in existence, from the finest rays of light to the dull gaps in a gem, has its place within the greater cosmic order. Life, in all its complexity and contradictions, is a path toward transcendence, where even death offers a refuge and a return to the divine.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
-
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #6</h1>
-
-    <p>This verse is rich in imagery and philosophical depth, offering a meditation on the interplay between opposites—light and dark, life and death, beauty and imperfection. Let's dive into each line, incorporating philosophical ideas, including those from Hindu thought.</p>
-
-    <p>The first line, "Dull little gaps are sprinkled on a gem’s dazzling shine," contrasts the dullness of gaps with the brilliance of the gem, which may symbolize the human condition or the nature of existence itself. The gem here could represent the soul or the divine essence, which, in Hindu philosophy, is seen as pure and unblemished (<em>atman</em>). The "dull little gaps" could represent imperfections or limitations, such as the obstacles and challenges that one faces in life. These "gaps" might also reflect <em>maya</em>, the illusion of separateness and duality that causes individuals to perceive themselves as apart from the divine, rather than part of the whole (<em>Brahman</em>). The verse acknowledges that even in the most radiant aspects of life or existence, there are still moments of dullness or imperfection, which are part of the natural flow of life.</p>
-
-    <p>In the second line, "Breaks of shade are layered between rays of light, the beams fine," we encounter the duality of light and shadow, echoing the Hindu concept of <em>dharma</em> and <em>adharma</em>, or righteousness and unrighteousness. Life is not only about light and success but also about the shadow—difficulties, suffering, and moral struggles. The "breaks of shade" suggest that the path to enlightenment or self-realization is never without obstacles. In Hindu thought, life is a balance between these opposites, as both light (knowledge, truth, liberation) and dark (ignorance, suffering, ego) are essential in the soul's journey. The “beams fine” could refer to <em>jnana</em> (knowledge) or <em>sattva</em> (purity), qualities that allow the soul to rise above the dualities of existence, as reflected in the contrast between light and shade.</p>
-
-    <p>The third line, "Strips of loam lie in a grove, the trees tiered in straight lines," evokes an image of the natural order and harmony of the universe. In Hinduism, the concept of <em>dharma</em> emphasizes the natural law or the cosmic order that maintains the universe's balance. The "strips of loam" symbolize the earth, the material foundation of life, which nourishes the trees (life) in the grove. The "trees tiered in straight lines" suggests structure and order—perhaps referring to the way existence itself is organized in layers or cycles. This could allude to the cyclical nature of life (<em>samsara</em>), where the soul is born, dies, and is reborn in different forms, but always remains part of the eternal <em>Brahman</em>, like the trees in the grove standing in a well-organized pattern.</p>
-
-    <p>The final line, "And glorious life takes refuge in death from time to time!" offers a poignant reflection on the cyclical nature of existence and the Hindu understanding of life and death. In Hindu philosophy, death is not an end, but a transition—a return to <em>Brahman</em> or the eternal source. The idea that life "takes refuge in death" suggests that through the process of death and rebirth, the soul achieves liberation or enlightenment. Life and death are not opposing forces, but part of the same ongoing cycle.</p>
-
-    <p><strong>In summary:</strong> this verse beautifully captures the essence of Hindu philosophy by illustrating the constant interplay between opposites—light and darkness, life and death, perfection and imperfection—and how these forces shape the journey of the soul. It conveys the understanding that everything in existence, from the finest rays of light to the dull gaps in a gem, has its place within the greater cosmic order. Life, in all its complexity and contradictions, is a path toward transcendence, where even death offers a refuge and a return to the divine.</p>
-  </div>
 
 </body>
 </html>
