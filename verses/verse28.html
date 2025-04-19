@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 28 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,107 +128,46 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-     <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
-
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #28</h1>
+
+  <p>This verse beautifully intertwines nature, art, and spiritual longing to express a deep, yearning connection with something eternal and transcendent. It conveys how various profound experiences—whether through natural landscapes or artistic achievements—evoke in the speaker a momentary glimpse of truth, one that is both elusive and ineffable.</p>
+
+  <h2>"Sunset across Agumbe’s horizon, sunrise atop Drona mountain,"</h2>
+  <p>These opening lines invoke the beauty and majesty of nature, particularly the breathtaking views of Agumbe (known for its stunning sunsets) and Drona mountain (a reference possibly to the sacred and revered peaks of India). The sunset and sunrise symbolize the cycles of time—the beginning and the end—offering a profound sense of awe. Agumbe and Drona mountain stand as specific, symbolic landmarks, known for their natural grandeur, evoking a sense of the eternal rhythms of the cosmos. Through these moments of nature’s spectacle, the speaker hints at a timeless truth that seems to briefly appear in these vast, sweeping views of the world.</p>
+
+  <h2>"Thyagaraja’s musical treat and Valmiki’s epic poetic feat"</h2>
+  <p>In this line, the verse brings in the realm of art and culture by invoking the names of two legendary figures in Indian tradition—Thyagaraja, the celebrated composer and musician, and Valmiki, the author of the Ramayana. Both are revered for their contribution to the divine through art. Thyagaraja’s musical compositions are spiritual and transcendent, while Valmiki’s epic poetry serves as a timeless reflection on dharma (righteousness) and human nature. Their works have an enduring influence, and the reference to their artistic feats suggests that such expressions of divinity through music and poetry are conduits to higher truths, just as nature is. These artistic masterpieces are the lenses through which the speaker sees beyond the material world and is drawn into a greater, unseen reality.</p>
+
+  <h2>"Light up from the depths of my being the feeling, the longing,"</h2>
+  <p>This line expresses the spiritual awakening or emotional stirrings that the speaker experiences in response to the beauty and depth of nature and art. The feeling and longing are not superficial desires but something deeper within, coming from the innermost core of their being. The experience of encountering such beauty ignites in them a deep yearning for something beyond ordinary perception—a longing for truth, wholeness, and spiritual fulfillment. This longing is not just a passing emotion but a soul-deep yearning, signifying a quest for the divine or transcendence.</p>
+
+  <h2>"A peek, a lure of truth everlasting, the glance fleeting!"</h2>
+  <p>The final line reveals that the truth the speaker longs for is not fully grasped, but rather glimpsed in fleeting moments. Truth everlasting here refers to an eternal, universal truth—one that transcends time, space, and individual experience. However, it is “fleeting,” only appearing briefly, much like a glimpse of something that cannot be fully held onto. The speaker is acknowledging that while they experience moments of insight—whether through nature, music, or poetry—these moments are elusive and do not provide full access to this truth. They are only a glance, a brief lure, suggesting that the pursuit of divine or spiritual truth is an ongoing journey, and the full experience of it cannot be contained in a single moment.</p>
+
+  <h2>Overall Interpretation:</h2>
+  <p>The verse conveys the ephemeral nature of divine truth and the unquenchable human yearning to connect with it. The references to nature (sunset, sunrise) and art (Thyagaraja’s music, Valmiki’s poetry) act as gateways to the transcendent, each providing a momentary glimpse of something eternal—a truth that eludes full understanding but stirs the soul nonetheless. The imagery creates a profound sense of longing for something that can only be touched briefly, yet its presence brings illumination to the speaker’s being. The verse evokes a sense of spiritual awakening—the realization that certain truths are beyond intellectual grasp and must be experienced intuitively, fleetingly, as the heart resonates with the sacred rhythms of life, art, and nature.</p>
+
+  <p>It suggests that truth is not a fixed, knowable entity but something alive and dynamic, which can only be glimpsed momentarily through profound experiences that awaken the soul. The speaker seems to acknowledge that although this truth is just out of reach, it lights up their existence, offering them a sense of purpose and clarity, even if only for a fleeting moment.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
-
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #28</h1>
-
-    <p>This verse beautifully intertwines nature, art, and spiritual longing to express a deep, yearning connection with something eternal and transcendent. It conveys how various profound experiences—whether through natural landscapes or artistic achievements—evoke in the speaker a momentary glimpse of truth, one that is both elusive and ineffable.</p>
-
-    <h2>"Sunset across Agumbe’s horizon, sunrise atop Drona mountain,"</h2>
-    <p>These opening lines invoke the beauty and majesty of nature, particularly the breathtaking views of Agumbe (known for its stunning sunsets) and Drona mountain (a reference possibly to the sacred and revered peaks of India). The sunset and sunrise symbolize the cycles of time—the beginning and the end—offering a profound sense of awe. Agumbe and Drona mountain stand as specific, symbolic landmarks, known for their natural grandeur, evoking a sense of the eternal rhythms of the cosmos. Through these moments of nature’s spectacle, the speaker hints at a timeless truth that seems to briefly appear in these vast, sweeping views of the world.</p>
-
-    <h2>"Thyagaraja’s musical treat and Valmiki’s epic poetic feat"</h2>
-    <p>In this line, the verse brings in the realm of art and culture by invoking the names of two legendary figures in Indian tradition—Thyagaraja, the celebrated composer and musician, and Valmiki, the author of the Ramayana. Both are revered for their contribution to the divine through art. Thyagaraja’s musical compositions are spiritual and transcendent, while Valmiki’s epic poetry serves as a timeless reflection on dharma (righteousness) and human nature. Their works have an enduring influence, and the reference to their artistic feats suggests that such expressions of divinity through music and poetry are conduits to higher truths, just as nature is. These artistic masterpieces are the lenses through which the speaker sees beyond the material world and is drawn into a greater, unseen reality.</p>
-
-    <h2>"Light up from the depths of my being the feeling, the longing,"</h2>
-    <p>This line expresses the spiritual awakening or emotional stirrings that the speaker experiences in response to the beauty and depth of nature and art. The feeling and longing are not superficial desires but something deeper within, coming from the innermost core of their being. The experience of encountering such beauty ignites in them a deep yearning for something beyond ordinary perception—a longing for truth, wholeness, and spiritual fulfillment. This longing is not just a passing emotion but a soul-deep yearning, signifying a quest for the divine or transcendence.</p>
-
-    <h2>"A peek, a lure of truth everlasting, the glance fleeting!"</h2>
-    <p>The final line reveals that the truth the speaker longs for is not fully grasped, but rather glimpsed in fleeting moments. Truth everlasting here refers to an eternal, universal truth—one that transcends time, space, and individual experience. However, it is “fleeting,” only appearing briefly, much like a glimpse of something that cannot be fully held onto. The speaker is acknowledging that while they experience moments of insight—whether through nature, music, or poetry—these moments are elusive and do not provide full access to this truth. They are only a glance, a brief lure, suggesting that the pursuit of divine or spiritual truth is an ongoing journey, and the full experience of it cannot be contained in a single moment.</p>
-
-    <h2>Overall Interpretation:</h2>
-    <p>The verse conveys the ephemeral nature of divine truth and the unquenchable human yearning to connect with it. The references to nature (sunset, sunrise) and art (Thyagaraja’s music, Valmiki’s poetry) act as gateways to the transcendent, each providing a momentary glimpse of something eternal—a truth that eludes full understanding but stirs the soul nonetheless. The imagery creates a profound sense of longing for something that can only be touched briefly, yet its presence brings illumination to the speaker’s being. The verse evokes a sense of spiritual awakening—the realization that certain truths are beyond intellectual grasp and must be experienced intuitively, fleetingly, as the heart resonates with the sacred rhythms of life, art, and nature.</p>
-
-    <p>It suggests that truth is not a fixed, knowable entity but something alive and dynamic, which can only be glimpsed momentarily through profound experiences that awaken the soul. The speaker seems to acknowledge that although this truth is just out of reach, it lights up their existence, offering them a sense of purpose and clarity, even if only for a fleeting moment.</p>
-  </div>
 
 </body>
 </html>
