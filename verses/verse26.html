@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 26 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,108 +128,47 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-     <a href="../index.html">Home</a>
-      <a href="../verses.html">Verses</a>
-      <a href="../about.html">About D.V. Gundappa</a>
-      <a href="../media.html">Interviews & Media</a>
-      <a href="../purchase.html">How to Buy</a>
-
-
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #26</h1>
+
+  <p>This verse touches on the universal forces that shape human experience, emphasizing how various emotions, actions, and states of being are deeply connected to the rhythms of nature and the inner workings of the human heart. Through its metaphors and vivid imagery, the verse suggests that life itself is a resonance—a series of vibrations that influence and reflect our emotions, relationships, and experiences.</p>
+
+  <h2>"Vibrations and reverberations abound in man’s life."</h2>
+  <p>The opening line suggests that life itself is full of energy, movements, and echoes—both external and internal. Vibrations and reverberations can be seen as metaphors for the various forces at play in the world that influence human behavior and experience. Just as sound waves reverberate and create an ongoing echo, the actions, emotions, and experiences of individuals resonate in the broader context of life and society. The "abundance" of these vibrations highlights the pervasiveness of this energy in human existence, suggesting that everything—from personal experiences to cultural movements—is part of a larger, interconnected rhythm.</p>
+
+  <h2>"His heart throbs to the pulsing drum of nature’s hum."</h2>
+  <p>This line emphasizes the deep connection between humanity and nature. The "heart throbs" metaphorically links the human heart to the heartbeat of nature itself, as though humans are in tune with the natural world—its cycles, its rhythms, and its intrinsic energy. The "pulsing drum" evokes an image of a steady, primal beat that mirrors life's flow—the rhythms of nature, seasons, and even the cosmic forces that govern existence. It suggests that humans, like the rest of nature, are part of this larger symphony, and our emotions and actions are aligned with the greater forces that move through the world.</p>
+
+  <h2>"Love kindles affection, suffering wrings out compassion,"</h2>
+  <p>This line highlights how emotions and experiences give rise to specific human responses. Love is presented as a force that ignites warmth and affection, suggesting that love has the power to inspire compassion and connection. On the other hand, suffering elicits compassion, showing how the experience of pain or loss can stir feelings of empathy and a desire to help others. Both love and suffering are powerful forces, and the verse presents them as being intrinsic to the human condition—each one shaping the human heart and influencing how we relate to others.</p>
+
+  <h2>"War inspires gallantry and a loud roar yields piteousness!"</h2>
+  <p>This line explores the contrasting outcomes of extreme human experiences. War is shown to inspire gallantry, suggesting that in the face of destruction and conflict, some individuals rise to demonstrate bravery, valor, and heroism. However, the second half of the line—"a loud roar yields piteousness"—reveals that even in moments of great strength or power, there is an underlying sorrow, suffering, and pitifulness. The roar could be interpreted as the sound of violence or anger, which may seem powerful at first but ultimately leads to pain and tragic consequences. The verse juxtaposes these extremes—courage in the face of war and the sorrow that follows conflict—to highlight the complex, multifaceted nature of human experience.</p>
+
+  <h2>Overall Interpretation:</h2>
+  <p>The verse is an exploration of how emotions, experiences, and actions reverberate through life. It suggests that human existence is not just a linear journey but a series of resonating movements influenced by the natural world, the heart’s emotions, and the human response to external circumstances. Love and suffering are presented as two of the most potent forces that move individuals, each capable of bringing about both connection and change. The contrast between war’s gallantry and the piteous roar emphasizes the dual nature of human actions—how moments of strength can lead to tragedy and how human efforts, while driven by noble intentions, are often intertwined with sorrow and loss.</p>
+
+  <p>The verse suggests that life itself is a dynamic rhythm, where every emotion, every experience, and every action is a vibration that extends outward, affecting the world and reverberating through time. In this way, the verse reminds us that human existence is inextricably tied to both internal impulses and external forces, and it is through this constant interplay of influences that we experience the fullness of life—its highs and lows, its triumphs and tragedies, and its capacity for both love and suffering.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
 
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #26</h1>
-
-    <p>This verse touches on the universal forces that shape human experience, emphasizing how various emotions, actions, and states of being are deeply connected to the rhythms of nature and the inner workings of the human heart. Through its metaphors and vivid imagery, the verse suggests that life itself is a resonance—a series of vibrations that influence and reflect our emotions, relationships, and experiences.</p>
-
-    <h2>"Vibrations and reverberations abound in man’s life."</h2>
-    <p>The opening line suggests that life itself is full of energy, movements, and echoes—both external and internal. Vibrations and reverberations can be seen as metaphors for the various forces at play in the world that influence human behavior and experience. Just as sound waves reverberate and create an ongoing echo, the actions, emotions, and experiences of individuals resonate in the broader context of life and society. The "abundance" of these vibrations highlights the pervasiveness of this energy in human existence, suggesting that everything—from personal experiences to cultural movements—is part of a larger, interconnected rhythm.</p>
-
-    <h2>"His heart throbs to the pulsing drum of nature’s hum."</h2>
-    <p>This line emphasizes the deep connection between humanity and nature. The "heart throbs" metaphorically links the human heart to the heartbeat of nature itself, as though humans are in tune with the natural world—its cycles, its rhythms, and its intrinsic energy. The "pulsing drum" evokes an image of a steady, primal beat that mirrors life's flow—the rhythms of nature, seasons, and even the cosmic forces that govern existence. It suggests that humans, like the rest of nature, are part of this larger symphony, and our emotions and actions are aligned with the greater forces that move through the world.</p>
-
-    <h2>"Love kindles affection, suffering wrings out compassion,"</h2>
-    <p>This line highlights how emotions and experiences give rise to specific human responses. Love is presented as a force that ignites warmth and affection, suggesting that love has the power to inspire compassion and connection. On the other hand, suffering elicits compassion, showing how the experience of pain or loss can stir feelings of empathy and a desire to help others. Both love and suffering are powerful forces, and the verse presents them as being intrinsic to the human condition—each one shaping the human heart and influencing how we relate to others.</p>
-
-    <h2>"War inspires gallantry and a loud roar yields piteousness!"</h2>
-    <p>This line explores the contrasting outcomes of extreme human experiences. War is shown to inspire gallantry, suggesting that in the face of destruction and conflict, some individuals rise to demonstrate bravery, valor, and heroism. However, the second half of the line—"a loud roar yields piteousness"—reveals that even in moments of great strength or power, there is an underlying sorrow, suffering, and pitifulness. The roar could be interpreted as the sound of violence or anger, which may seem powerful at first but ultimately leads to pain and tragic consequences. The verse juxtaposes these extremes—courage in the face of war and the sorrow that follows conflict—to highlight the complex, multifaceted nature of human experience.</p>
-
-    <h2>Overall Interpretation:</h2>
-    <p>The verse is an exploration of how emotions, experiences, and actions reverberate through life. It suggests that human existence is not just a linear journey but a series of resonating movements influenced by the natural world, the heart’s emotions, and the human response to external circumstances. Love and suffering are presented as two of the most potent forces that move individuals, each capable of bringing about both connection and change.</p>
-
-    <p>The contrast between war’s gallantry and the piteous roar emphasizes the dual nature of human actions—how moments of strength can lead to tragedy and how human efforts, while driven by noble intentions, are often intertwined with sorrow and loss. The verse suggests that life itself is a dynamic rhythm, where every emotion, every experience, and every action is a vibration that extends outward, affecting the world and reverberating through time. In this way, the verse reminds us that human existence is inextricably tied to both internal impulses and external forces, and it is through this constant interplay of influences that we experience the fullness of life—its highs and lows, its triumphs and tragedies, and its capacity for both love and suffering.</p>
-  </div>
-
 </body>
 </html>
+
