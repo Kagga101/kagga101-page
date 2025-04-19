@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <base href="/kagga101-page/">
   <title>Verse 3 – Kagga 101</title>
   <style>
     body {
@@ -20,6 +21,7 @@
       border-bottom: 1px solid #ccc;
       padding: 15px 40px;
       font-size: 14px;
+      position: relative;
     }
 
     nav .nav-container {
@@ -51,6 +53,7 @@
       font-size: 24px;
       margin-bottom: 30px;
       font-weight: bold;
+      font-family: 'Trebuchet MS', sans-serif;
     }
 
     h2 {
@@ -59,7 +62,8 @@
       font-weight: bold;
     }
 
-    p {
+    p, blockquote {
+      text-align: justify;
       margin-bottom: 1.5em;
     }
 
@@ -70,6 +74,53 @@
       font-style: italic;
       color: #555;
     }
+
+    @media (max-width: 768px) {
+      nav .nav-left {
+        display: none;
+      }
+
+      nav .nav-right {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 70%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95);
+        padding-top: 60px;
+        padding-left: 20px;
+        z-index: 1000;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+      }
+
+      .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #2d2b2a;
+        padding: 10px;
+      }
+
+      nav.active .nav-right {
+        display: block;
+        transform: translateX(0);
+      }
+
+      nav .nav-right a {
+        display: block;
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 18px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      nav .nav-right a:hover {
+        background-color: #ddd;
+      }
+    }
   </style>
 </head>
 <body>
@@ -77,108 +128,49 @@
 <nav>
   <div class="nav-container">
     <div class="nav-left">
-      <!-- Remove the Home link from here -->
+      <a href="index.html">Home</a>
     </div>
     <div class="nav-right">
-      <a href="/kagga101-page/index.html">Home</a>
-      <a href="/kagga101-page/verses.html">Verses</a>
-      <a href="/kagga101-page/about.html">About D.V. Gundappa</a>
-      <a href="/kagga101-page/media.html">Interviews & Media</a>
-      <a href="/kagga101-page/purchase.html">How to Buy</a>
+      <a href="verses.html">Commentary</a>
+      <a href="about.html">About D.V. Gundappa</a>
+      <a href="media.html">Interviews & Media</a>
+      <a href="purchase.html">How to Buy</a>
     </div>
-    <!-- Hamburger Icon -->
-    <div class="hamburger" onclick="toggleMenu()">
-      &#9776; <!-- Hamburger icon symbol -->
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
   </div>
 </nav>
 
+<div class="container">
+  <h1>Kagga 101 – Verse #3</h1>
+
+  <p>This verse offers a reflection on the human experience, particularly the tension between the chaos of the world and the transformative, poetic nature of the soul. It touches upon themes of struggle, surrender, and beauty through the metaphor of a lotus and the perspective of an aesthete, someone who finds meaning in art and beauty even in the face of life's turbulence. Let’s break it down:</p>
+
+  <h2>"The world, with its hustle, bustle, joy, grief and strife,"</h2>
+  <p>The opening line captures the frenetic, multifaceted nature of the world. The "hustle and bustle" refers to the constant movement and activity that characterize daily life, while "joy, grief, and strife" convey the emotional extremes and the complexities of human existence. This line reflects the duality of life, where moments of joy and peace are often interwoven with pain and conflict. It sets the stage for the tension that the speaker will explore—how these opposing forces pull at the individual, affecting both mind and heart.</p>
+
+  <h2>"Grabs me tight, rips open my chest and rattles my life."</h2>
+  <p>This line vividly conveys the intensity and overwhelming nature of life’s experiences. The world "grabs tight" and "rips open my chest," suggesting a violent, almost suffocating experience that exposes vulnerability. The use of "rattles my life" implies the unsettling nature of these emotional upheavals. In Indian philosophy, this could evoke the idea of moksha or liberation being a difficult journey, as life’s distractions, attachments, and struggles are intense forces that disrupt inner peace and make one confront the chaos of existence. It speaks to the struggle between the external world and the internal self—how the noise and turbulence of life can shake and challenge one’s sense of stability.</p>
+
+  <h2>"Yet, it fascinates an aesthete of poetry and art"</h2>
+  <p>Despite the chaos, the speaker introduces the character of an "aesthete," someone who finds beauty and meaning in the world through art and poetry. The aesthete is not immune to the tumult of life but instead finds fascination and inspiration in it. This suggests that, even within the struggle and pain, there is an underlying beauty that calls out to those attuned to it—those who have the ability to see beyond the surface turmoil. In Indian thought, this could reflect the idea of seeing beyond māyā (illusion) of the material world, recognizing the underlying divine presence in all things, both joyful and painful.</p>
+
+  <h2>"Who, like a lotus blooming to the sun, opens his heart!"</h2>
+  <p>The image of the lotus blooming to the sun is a powerful metaphor for spiritual and emotional awakening. Just as the lotus rises from the murky waters to bloom in the light, the aesthete opens their heart despite—or because of—the chaos. The lotus symbolizes purity, beauty, and enlightenment in Indian philosophy, often used to represent the soul’s journey toward self-realization. Despite the world’s turbulence, the aesthete is able to rise above it, opening their heart to beauty, art, and poetry as a way to connect to a deeper, more profound truth. The act of the lotus blooming represents the opening of the heart and mind to the light of wisdom and love, even in a world that is filled with struggle.</p>
+
+  <h2>Indian Philosophical Context:</h2>
+  <p>The verse reflects a tension between samsara (the cycle of birth, death, and rebirth) and the possibility of self-realization. The "hustle and bustle" of the world reflects the entanglements and distractions of samsara, where individuals are often caught in the constant cycle of desires, attachments, and emotional turmoil. However, the "aesthete" represents the higher pursuit of jnana (knowledge) and bhakti (devotion) through which one seeks to transcend the chaos of samsara and find deeper meaning in the world.</p>
+
+  <p>The image of the lotus blooming in the sun also has a deep connection to prana (life force) and aatma (soul). Just as the lotus blooms in the light, the heart and soul of the individual can open and bloom in the light of spiritual awareness, seeing beauty and divinity in even the harshest aspects of life.</p>
+
+  <p>The aesthete, by embracing life’s ups and downs with an open heart, embodies the concept of the Sakshi or the witness consciousness—the ability to observe the world without getting entangled in its emotional turbulence, yet still appreciating the beauty it has to offer. This is a key practice in many schools of Indian thought, particularly in the teachings of Advaita Vedanta, where one seeks to understand that, despite the apparent chaos and suffering, there is an underlying unity and divinity in all things.</p>
+</div>
 
 <script>
-  // Toggle the navigation menu on mobile
   function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
+    document.querySelector('nav').classList.toggle('active');
   }
 </script>
 
-<style>
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    nav .nav-left {
-      display: none; /* Hide home link on mobile */
-    }
-
-    nav .nav-right {
-      display: none; /* Hide all links on mobile */
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 70%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent background */
-      padding-top: 60px; /* Offset for the navbar */
-      padding-left: 20px;
-      z-index: 1000; /* Ensure it appears above everything */
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3); /* Slight shadow to the left */
-      transition: transform 0.3s ease-in-out;
-      transform: translateX(100%); /* Hide off-screen */
-    }
-
-    /* Show hamburger icon */
-    .hamburger {
-      display: block;
-      font-size: 30px;
-      cursor: pointer;
-      color: #2d2b2a;
-      padding: 10px;
-    }
-
-    /* Show the nav items when the menu is active */
-    nav.active .nav-right {
-      display: block;
-      transform: translateX(0); /* Slide the menu in from the right */
-    }
-
-    nav .nav-right a {
-      display: block;
-      margin: 10px 0;
-      padding: 8px;
-      font-size: 18px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    nav .nav-right a:hover {
-      background-color: #ddd;
-    }
-  }
-</style>
-
-
-  <div class="container">
-    <h1>Kagga 101 – Verse #3</h1>
-
-    <p>This verse offers a reflection on the human experience, particularly the tension between the chaos of the world and the transformative, poetic nature of the soul. It touches upon themes of struggle, surrender, and beauty through the metaphor of a lotus and the perspective of an aesthete, someone who finds meaning in art and beauty even in the face of life's turbulence. Let’s break it down:</p>
-
-    <h2>"The world, with its hustle, bustle, joy, grief and strife,":</h2>
-    <p>The opening line captures the frenetic, multifaceted nature of the world. The "hustle and bustle" refers to the constant movement and activity that characterize daily life, while "joy, grief, and strife" convey the emotional extremes and the complexities of human existence. This line reflects the duality of life, where moments of joy and peace are often interwoven with pain and conflict. It sets the stage for the tension that the speaker will explore—how these opposing forces pull at the individual, affecting both mind and heart.</p>
-
-    <h2>"Grabs me tight, rips open my chest and rattles my life.":</h2>
-    <p>This line vividly conveys the intensity and overwhelming nature of life’s experiences. The world "grabs tight" and "rips open my chest," suggesting a violent, almost suffocating experience that exposes vulnerability. The use of "rattles my life" implies the unsettling nature of these emotional upheavals. In Indian philosophy, this could evoke the idea of moksha or liberation being a difficult journey, as life’s distractions, attachments, and struggles are intense forces that disrupt inner peace and make one confront the chaos of existence. It speaks to the struggle between the external world and the internal self—how the noise and turbulence of life can shake and challenge one’s sense of stability.</p>
-
-    <h2>"Yet, it fascinates an aesthete of poetry and art":</h2>
-    <p>Despite the chaos, the speaker introduces the character of an "aesthete," someone who finds beauty and meaning in the world through art and poetry. The aesthete is not immune to the tumult of life but instead finds fascination and inspiration in it. This suggests that, even within the struggle and pain, there is an underlying beauty that calls out to those attuned to it—those who have the ability to see beyond the surface turmoil. In Indian thought, this could reflect the idea of seeing beyond <em>māyā</em> (illusion) of the material world, recognizing the underlying divine presence in all things, both joyful and painful.</p>
-
-    <h2>"Who, like a lotus blooming to the sun, opens his heart!":</h2>
-    <p>The image of the lotus blooming to the sun is a powerful metaphor for spiritual and emotional awakening. Just as the lotus rises from the murky waters to bloom in the light, the aesthete opens their heart despite—or because of—the chaos. The lotus symbolizes purity, beauty, and enlightenment in Indian philosophy, often used to represent the soul’s journey toward self-realization. Despite the world’s turbulence, the aesthete is able to rise above it, opening their heart to beauty, art, and poetry as a way to connect to a deeper, more profound truth. The act of the lotus blooming represents the opening of the heart and mind to the light of wisdom and love, even in a world that is filled with struggle.</p>
-
-    <h2>Indian Philosophical Context:</h2>
-    <p>The verse reflects a tension between <em>samsara</em> (the cycle of birth, death, and rebirth) and the possibility of self-realization. The "hustle and bustle" of the world reflects the entanglements and distractions of <em>samsara</em>, where individuals are often caught in the constant cycle of desires, attachments, and emotional turmoil. However, the "aesthete" represents the higher pursuit of <em>jnana</em> (knowledge) and <em>bhakti</em> (devotion) through which one seeks to transcend the chaos of <em>samsara</em> and find deeper meaning in the world.</p>
-
-    <p>The image of the lotus blooming in the sun also has a deep connection to <em>prana</em> (life force) and <em>aatma</em> (soul). Just as the lotus blooms in the light, the heart and soul of the individual can open and bloom in the light of spiritual awareness, seeing beauty and divinity in even the harshest aspects of life.</p>
-
-    <p>The aesthete, by embracing life’s ups and downs with an open heart, embodies the concept of the <em>Sakshi</em> or the witness consciousness—the ability to observe the world without getting entangled in its emotional turbulence, yet still appreciating the beauty it has to offer. This is a key practice in many schools of Indian thought, particularly in the teachings of <em>Advaita Vedanta</em>, where one seeks to understand that, despite the apparent chaos and suffering, there is an underlying unity and divinity in all things.</p>
-  </div>
-
 </body>
 </html>
+
